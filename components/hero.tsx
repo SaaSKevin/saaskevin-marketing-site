@@ -23,11 +23,11 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed text-pretty">
-              Your users are asking you for custom domains, but you don't know where to begin. SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.
+              SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.
             </p>
-            
+
             <p className="mt-3 text-sm text-muted-foreground/80 font-mono">
-              Minimal backend: Read one header (5 lines of code)
+              Minimal backend: Read one header (3 lines of code)
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
@@ -64,13 +64,13 @@ export function Hero() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-primary/10 blur-3xl animate-pulse" />
             </div>
-            
+
             {/* Animated concentric circles */}
             <div className="absolute inset-0 flex items-center justify-center">
               <svg className="w-full h-full max-w-md" viewBox="0 0 400 400">
-                <circle 
-                  cx="200" cy="200" r="150" 
-                  fill="none" stroke="currentColor" strokeWidth="0.5" 
+                <circle
+                  cx="200" cy="200" r="150"
+                  fill="none" stroke="currentColor" strokeWidth="0.5"
                   className="text-primary opacity-20"
                   strokeDasharray="8 8"
                 >
@@ -83,9 +83,9 @@ export function Hero() {
                     repeatCount="indefinite"
                   />
                 </circle>
-                <circle 
-                  cx="200" cy="200" r="110" 
-                  fill="none" stroke="currentColor" strokeWidth="0.5" 
+                <circle
+                  cx="200" cy="200" r="110"
+                  fill="none" stroke="currentColor" strokeWidth="0.5"
                   className="text-primary opacity-30"
                   strokeDasharray="4 6"
                 >
@@ -98,9 +98,9 @@ export function Hero() {
                     repeatCount="indefinite"
                   />
                 </circle>
-                <circle 
-                  cx="200" cy="200" r="70" 
-                  fill="none" stroke="currentColor" strokeWidth="0.5" 
+                <circle
+                  cx="200" cy="200" r="70"
+                  fill="none" stroke="currentColor" strokeWidth="0.5"
                   className="text-primary opacity-40"
                   strokeDasharray="2 4"
                 >
@@ -122,15 +122,15 @@ export function Hero() {
                 <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2.5 shadow-lg backdrop-blur-sm">
                   <X className="h-4 w-4 text-red-500" />
                   <span className="text-sm font-mono text-red-400 line-through decoration-red-500/50">
-                    app.yoursaas.io/u/puresoap
+                    app.yoursaas.com/shop/puresoap
                   </span>
                 </div>
                 {/* Animated dashed line down */}
                 <svg className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-10" viewBox="0 0 8 40">
-                  <line 
-                    x1="4" y1="0" x2="4" y2="40" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
+                  <line
+                    x1="4" y1="0" x2="4" y2="40"
+                    stroke="currentColor"
+                    strokeWidth="2"
                     strokeDasharray="4 4"
                     className="text-muted-foreground/40"
                   >
@@ -159,10 +159,10 @@ export function Hero() {
               <div className="relative animate-[fadeInUp_0.6s_ease-out_0.5s_both]">
                 {/* Animated dashed line up */}
                 <svg className="absolute left-1/2 -translate-x-1/2 bottom-full w-2 h-10" viewBox="0 0 8 40">
-                  <line 
-                    x1="4" y1="0" x2="4" y2="40" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
+                  <line
+                    x1="4" y1="0" x2="4" y2="40"
+                    stroke="currentColor"
+                    strokeWidth="2"
                     strokeDasharray="4 4"
                     className="text-muted-foreground/40"
                   >
@@ -201,7 +201,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      
+
       {/* Custom keyframe animations */}
       <style jsx>{`
         @keyframes fadeInDown {

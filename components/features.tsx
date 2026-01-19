@@ -18,7 +18,7 @@ const features = [
   },
   {
     icon: Code,
-    title: "5 Lines of Code",
+    title: "3 Lines of Code",
     description: "Read one header to know which customer is visiting. That's your entire backend integration. Seriously.",
   },
   {
@@ -35,7 +35,7 @@ const features = [
 
 const comparisons = [
   { label: "How you add it", competitors: "Complex backend APIs", saaskevin: "Paste a widget" },
-  { label: "Code you write", competitors: "~100+ lines", saaskevin: "5 lines" },
+  { label: "Code you write", competitors: "~100+ lines", saaskevin: "3 lines" },
   { label: "User interface", competitors: "Build it yourself", saaskevin: "Ready to use" },
   { label: "DNS headaches", competitors: "You figure it out", saaskevin: "We handle it" },
   { label: "SSL certificates", competitors: "Your problem", saaskevin: "Automatic" },
@@ -48,10 +48,10 @@ export function Features() {
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Features</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Everything you need, nothing you don't
+            Your users are asking you for custom domains. SaaSKevin removes all the headaches.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Custom domains shouldn't be a headache. We take care of everything so you can focus on your product.
+            Custom domains shouldn't be complicated. We take care of everything so you can focus on your product.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export function Features() {
             <div className="text-sm text-muted-foreground">Average setup time</div>
           </div>
           <div className="bg-card rounded-xl border border-border p-6 text-center">
-            <div className="text-4xl font-bold text-primary mb-1">5 lines</div>
+            <div className="text-4xl font-bold text-primary mb-1">3 lines</div>
             <div className="text-sm text-muted-foreground">Of backend code needed</div>
           </div>
           <div className="bg-card rounded-xl border border-border p-6 text-center">

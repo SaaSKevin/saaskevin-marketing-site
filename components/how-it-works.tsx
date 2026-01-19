@@ -39,7 +39,7 @@ function SetupContent() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("proxy.saaskevin.com")
+    navigator.clipboard.writeText("edge.saaskevin.com")
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -47,9 +47,9 @@ function SetupContent() {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">Point your app to SaaSKevin</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">Create a CNAME target for custom domains</h3>
         <p className="text-muted-foreground">
-          Add one DNS record to route traffic through us. We handle everything else.
+          Optional: create a branded hostname (like shop.yoursaas.com) that your users will CNAME to. Your existing app origin stays the same.
         </p>
       </div>
 
@@ -72,14 +72,16 @@ function SetupContent() {
               CNAME
             </div>
             <div className="bg-card rounded-lg px-3 py-2 border border-border text-sm font-mono">
-              app
+              shop
             </div>
             <div className="relative">
               <div className="bg-card rounded-lg px-3 py-2 border border-primary/30 text-sm font-mono text-primary pr-10 fix-overflow">
-                proxy.saaskevin.com
+                edge.saaskevin.com
               </div>
               <button
+                type="button"
                 onClick={handleCopy}
+                aria-label="Copy SaaSKevin CNAME target"
                 className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-secondary rounded transition-colors"
               >
                 {copied ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4 text-muted-foreground" />}
@@ -89,7 +91,7 @@ function SetupContent() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">
-          This routes app.yoursaas.com through SaaSKevin so we can handle custom domains.
+          This creates a stable CNAME target for your users’ custom domains (without changing your app origin like app.yoursaas.com).
         </p>
       </div>
 
@@ -177,12 +179,9 @@ function WidgetContent() {
 function VerifyContent() {
   const [copied, setCopied] = useState(false)
 
-  const code = `// That's it - just read the header
-const customerId = req.headers['x-saaskevin-customer'];
-
-// Now serve content for this user
-const user = await getUser(customerId);
-renderDashboard(user);`
+  const code = `const customerId = req.headers['x-saaskevin-customer-id']
+const user = await getUser(customerId)
+renderDashboard(user)`
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code)
@@ -236,7 +235,7 @@ renderDashboard(user);`
           <span className="text-muted-foreground md:hidden">↓</span>
           <div className="flex items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
             <span className="text-muted-foreground">We add</span>
-            <span className="font-mono text-primary">x-saaskevin-customer: cust_123</span>
+            <span className="font-mono text-primary">x-saaskevin-customer-id: user_123</span>
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
