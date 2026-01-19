@@ -41,10 +41,14 @@ export default function RootLayout({
         {children}
         <Analytics />
 
-        <script>
-          {/* Load GrowSurf */}
-          (function(g,r,s,f){g.grsfSettings={campaignId:"ewq1pl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
-        </script>
+        {/* Load GrowSurf script only on the client side */}
+        {typeof window !== "undefined" && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(g,r,s,f){g.grsfSettings={campaignId:"ewq1pl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);`
+            }}
+          />
+        )}
       </body>
     </html>
   )
