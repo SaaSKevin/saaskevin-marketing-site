@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CheckCircle2, ArrowRight, Loader2 } from "lucide-react"
 
+// Load GrowSurf
+if (!window.growsurf) {
+  (function(g,r,s,f){g.grsfSettings={campaignId:"ewq1pl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
+}
+
 export function Waitlist() {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
@@ -14,12 +19,13 @@ export function Waitlist() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!email) return
-    
+
     setStatus("loading")
-    
+
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
+    // await new Promise(resolve => setTimeout(resolve, 1000));
+    growsurf.addParticipant(email);
+
     setStatus("success")
     setEmail("")
   }
@@ -31,20 +37,20 @@ export function Waitlist() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-          
+
           <div className="relative px-6 py-16 md:px-12 md:py-20">
             <div className="max-w-2xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm text-primary mb-6">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 Limited early access
               </div>
-              
+
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
                 Stop dreading custom domain requests
               </h2>
-              
+
               <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-                Join the waitlist and be first to offer your users beautiful, 
+                Join the waitlist and be first to offer your users beautiful,
                 branded domains—without the engineering headache.
               </p>
 
@@ -68,8 +74,8 @@ export function Waitlist() {
                     required
                     className="h-12 bg-background border-border text-foreground placeholder:text-muted-foreground"
                   />
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     size="lg"
                     disabled={status === "loading"}
                     className="h-12 bg-primary hover:bg-accent text-primary-foreground px-6 shrink-0"
