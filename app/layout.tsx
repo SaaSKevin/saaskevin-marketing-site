@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -41,14 +42,22 @@ export default function RootLayout({
         {children}
         <Analytics />
 
-        {/* Load GrowSurf script only on the client side */}
-        {typeof window !== "undefined" && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(g,r,s,f){g.grsfSettings={campaignId:"ewq1pl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);`
-            }}
-          />
-        )}
+        {/* Load GrowSurf */}
+        <Script
+          id="growsurf-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.grsfSettings = { campaignId: "ewq1pl", version: "2.0.0" };
+            `,
+          }}
+        />
+        <Script
+          id="growsurf-script"
+          strategy="afterInteractive"
+          src="https://app.growsurf.com/growsurf.js?v=2.0.0"
+          data-grsf-campaign="ewq1pl"
+        />
       </body>
     </html>
   )
