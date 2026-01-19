@@ -7,11 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CheckCircle2, ArrowRight, Loader2 } from "lucide-react"
 
-// Load GrowSurf
-if (!window.growsurf) {
-  (function(g,r,s,f){g.grsfSettings={campaignId:"ewq1pl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
-}
-
 export function Waitlist() {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
@@ -24,7 +19,7 @@ export function Waitlist() {
 
     // Simulate API call
     // await new Promise(resolve => setTimeout(resolve, 1000));
-    growsurf.addParticipant(email);
+    await growsurf.addParticipant(email);
 
     setStatus("success")
     setEmail("")
