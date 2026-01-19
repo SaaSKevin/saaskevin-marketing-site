@@ -47,9 +47,46 @@ function SetupContent() {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">Create a CNAME target for custom domains</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">Set your origin server (where your app already runs)</h3>
         <p className="text-muted-foreground">
-          Optional: create a branded hostname (like shop.yoursaas.com) that your users will CNAME to. Your existing app origin stays the same.
+          Enter your origin in SaaSKevin, then optionally create a branded CNAME target (like shop.yoursaas.com) that users will point their custom domains at.
+        </p>
+      </div>
+
+      {/* Origin settings */}
+      <div className="bg-secondary/50 rounded-xl p-6 border border-border">
+        <div className="flex items-center gap-2 mb-4">
+          <Settings className="w-5 h-5 text-primary" />
+          <span className="font-medium text-foreground">Origin Settings</span>
+        </div>
+
+        <div className="space-y-4">
+          <div className="grid grid-cols-3 gap-4 text-xs uppercase tracking-wider text-muted-foreground font-medium border-b border-border pb-2">
+            <div>Setting</div>
+            <div className="col-span-2">Value</div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <div className="bg-card rounded-lg px-3 py-2 border border-border text-sm">
+              Origin Server
+            </div>
+            <div className="col-span-2 bg-card rounded-lg px-3 py-2 border border-primary/30 text-sm font-mono text-primary fix-overflow">
+              app.yoursaas.com
+            </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <div className="bg-card rounded-lg px-3 py-2 border border-border text-sm">
+              Fallback URL
+            </div>
+            <div className="col-span-2 bg-card rounded-lg px-3 py-2 border border-border text-sm font-mono text-muted-foreground fix-overflow">
+              https://app.yoursaas.com/not-found
+            </div>
+          </div>
+        </div>
+
+        <p className="text-xs text-muted-foreground mt-4">
+          This is your existing app host. You keep it pointed at your current hosting provider — SaaSKevin proxies custom domain traffic to it.
         </p>
       </div>
 

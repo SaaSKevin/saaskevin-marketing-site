@@ -48,7 +48,7 @@ export function Features() {
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Features</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Your users are asking you for custom domains. SaaSKevin removes all the headaches.
+            Your users are asking for custom domains. SaaSKevin removes all the headaches.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
             Custom domains shouldn't be complicated. We take care of everything so you can focus on your product.
