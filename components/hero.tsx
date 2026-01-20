@@ -122,7 +122,7 @@ export function Hero() {
                 <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2.5 shadow-lg backdrop-blur-sm">
                   <X className="h-4 w-4 text-red-500" />
                   <span className="text-sm font-mono text-red-400 line-through decoration-red-500/50">
-                    app.yoursaas.com/puresoaps
+                    yoursaas.com/puresoaps
                   </span>
                 </div>
                 {/* Animated dashed line down */}
