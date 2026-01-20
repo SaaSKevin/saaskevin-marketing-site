@@ -59,7 +59,7 @@ function EndUserDemo() {
                 <div className="flex gap-2">
                   <input
                     type="text"
-                    value="puresoaps.com"
+                    value="yourcustomer.com"
                     readOnly
                     className="flex-1 h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm"
                   />
@@ -125,7 +125,7 @@ function EndUserDemo() {
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Your custom domain is now live!</p>
                 <a href="#" className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                  https://puresoaps.com
+                  https://yourcustomer.com
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
@@ -246,7 +246,7 @@ function AdminDemo() {
               <h4 className="font-semibold text-foreground mb-4">Active Domains</h4>
               <div className="space-y-2">
                 {[
-                  { domain: 'puresoaps.com', user: 'user_abc', status: 'active' },
+                  { domain: 'yourcustomer.com', user: 'user_abc', status: 'active' },
                   { domain: 'shop.bobstees.io', user: 'user_xyz', status: 'active' },
                   { domain: 'store.corp.net', user: 'user_123', status: 'pending' },
                 ].map((item) => (

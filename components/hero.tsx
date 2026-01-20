@@ -122,7 +122,7 @@ export function Hero() {
                 <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2.5 shadow-lg backdrop-blur-sm">
                   <X className="h-4 w-4 text-red-500" />
                   <span className="text-sm font-mono text-red-400 line-through decoration-red-500/50">
-                    yoursaas.com/puresoaps
+                    yoursaas.com/yourcustomer
                   </span>
                 </div>
                 {/* Animated dashed line down */}
@@ -177,7 +177,7 @@ export function Hero() {
                 </svg>
                 <div className="flex items-center gap-2 bg-card border border-primary/30 rounded-full px-5 py-3 shadow-xl shadow-primary/10 backdrop-blur-sm">
                   <span className="text-sm md:text-base font-mono text-muted-foreground">https://</span>
-                  <span className="text-sm md:text-base font-mono font-medium text-primary">puresoaps.com</span>
+                  <span className="text-sm md:text-base font-mono font-medium text-primary">yourcustomer.com</span>
                   <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center ml-1 animate-[bounceIn_0.5s_ease-out_1s_both]">
                     <Check className="w-3 h-3 text-white" />
                   </div>

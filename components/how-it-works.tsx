@@ -216,7 +216,7 @@ function WidgetContent() {
           </div>
           <div className="flex items-center gap-2">
             <div className="flex-1 bg-secondary rounded-lg px-3 py-2 text-sm text-muted-foreground">
-              puresoaps.com
+              yourcustomer.com
             </div>
             <button className="px-3 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
               Manage
@@ -281,7 +281,7 @@ renderDashboard(user)`
         <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-4 text-sm">
           <div className="flex items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
             <span className="text-muted-foreground">User visits</span>
-            <span className="font-mono text-primary">puresoaps.com</span>
+            <span className="font-mono text-primary">yourcustomer.com</span>
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
