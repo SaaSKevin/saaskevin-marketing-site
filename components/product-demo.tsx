@@ -59,7 +59,7 @@ function EndUserDemo() {
                 <div className="flex gap-2">
                   <input
                     type="text"
-                    value="shop.puresoaps.com"
+                    value="puresoaps.com"
                     readOnly
                     className="flex-1 h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm"
                   />
@@ -125,7 +125,7 @@ function EndUserDemo() {
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Your custom domain is now live!</p>
                 <a href="#" className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                  https://shop.puresoaps.com
+                  https://puresoaps.com
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
@@ -246,7 +246,7 @@ function AdminDemo() {
               <h4 className="font-semibold text-foreground mb-4">Active Domains</h4>
               <div className="space-y-2">
                 {[
-                  { domain: 'shop.puresoaps.com', user: 'user_abc', status: 'active' },
+                  { domain: 'puresoaps.com', user: 'user_abc', status: 'active' },
                   { domain: 'shop.bobstees.io', user: 'user_xyz', status: 'active' },
                   { domain: 'store.corp.net', user: 'user_123', status: 'pending' },
                 ].map((item) => (
@@ -272,24 +272,24 @@ function AdminDemo() {
             <div className="animate-fadeIn">
               <h4 className="font-semibold text-foreground mb-4">Configuration</h4>
               <div className="space-y-3">
-                <div>
+                {/* <div>
                   <label className="text-xs text-muted-foreground block mb-1">Origin Server</label>
                   <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-foreground">
                     app.yoursaas.com
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <label className="text-xs text-muted-foreground block mb-1">API Key</label>
                   <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-muted-foreground">
                     pk_live_abc123...
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <label className="text-xs text-muted-foreground block mb-1">Webhook URL</label>
                   <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-muted-foreground">
                     https://app.yoursaas.com/webhooks/saaskevin
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           )}
