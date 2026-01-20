@@ -87,7 +87,7 @@ function EndUserDemo() {
                   <div className="flex justify-between p-2 bg-background rounded border border-border items-center">
                     <span className="text-muted-foreground">Target</span>
                     <div className="flex items-center gap-2">
-                      <span className="text-primary">edge.saaskevin.com</span>
+                      <span className="text-primary">proxy.saaskevin.com</span>
                       <Copy className="w-3 h-3 text-muted-foreground" />
                     </div>
                   </div>

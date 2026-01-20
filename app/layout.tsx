@@ -9,8 +9,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SaaSKevin - Custom Domains for Your SaaS, No Code Required',
-  description: 'Give your users custom domains without writing a single line of code. SaaSKevin wraps Cloudflare for SaaS so you can embed white-label domain functionality in minutes.',
+  title: 'SaaSKevin - Custom Domains for Your SaaS, Minimal Code Required',
+  description: 'Give your users custom domains with only 3 lines of code. SaaSKevin lets you embed white-label domain functionality in minutes.',
   generator: 'SaaSKevin',
   icons: {
     icon: [
