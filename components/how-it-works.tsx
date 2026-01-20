@@ -99,10 +99,10 @@ function SetupContent() {
       </div>
 
       <div>
-        {/* <h3 className="text-lg font-semibold text-foreground mb-2">Add a DNS record</h3> */}
-        <p className="text-muted-foreground">
+        <h3 className="text-lg font-semibold text-foreground mb-2">Add a new CNAME record that users will point their custom domains at.</h3>
+        {/* <p className="text-muted-foreground">
           Create a CNAME record (like shop.yoursaas.com) that users will point their custom domains at.
-        </p>
+        </p> */}
       </div>
 
       {/* Visual DNS setup */}
@@ -143,7 +143,7 @@ function SetupContent() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">
-          This creates a stable CNAME target for your users’ custom domains (without changing your app origin like app.yoursaas.com).
+          This creates a branded CNAME target for your users’ custom domains (traffic to <span className="font-mono text-primary">shop.yoursaas.com</span> will be proxied to <span className="font-mono text-primary">app.yoursaas.com</span>).
         </p>
       </div>
 
