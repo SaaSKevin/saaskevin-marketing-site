@@ -26,9 +26,9 @@ export function Hero() {
               SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.
             </p>
 
-            <p className="mt-3 text-sm text-muted-foreground/80 font-mono">
+            {/* <p className="mt-3 text-sm text-muted-foreground/80 font-mono">
               Minimal backend: Read one header (3 lines of code)
-            </p>
+            </p> */}
 
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <Button size="lg" className="bg-primary hover:bg-accent text-primary-foreground px-8 h-12 text-base" asChild>
@@ -37,7 +37,7 @@ export function Hero() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 text-base px-8 border-border text-foreground hover:bg-secondary bg-transparent" asChild>
+              <Button variant="outline" size="lg" className="h-12 text-base px-8 border-border text-foreground hover:bg-secondary hover:text-foreground bg-transparent" asChild>
                 <Link href="#how-it-works">See How It Works</Link>
               </Button>
             </div>
@@ -122,7 +122,7 @@ export function Hero() {
                 <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2.5 shadow-lg backdrop-blur-sm">
                   <X className="h-4 w-4 text-red-500" />
                   <span className="text-sm font-mono text-red-400 line-through decoration-red-500/50">
-                    app.yoursaas.com/shop/puresoap
+                    app.yoursaas.com/puresoaps
                   </span>
                 </div>
                 {/* Animated dashed line down */}
@@ -177,7 +177,7 @@ export function Hero() {
                 </svg>
                 <div className="flex items-center gap-2 bg-card border border-primary/30 rounded-full px-5 py-3 shadow-xl shadow-primary/10 backdrop-blur-sm">
                   <span className="text-sm md:text-base font-mono text-muted-foreground">https://</span>
-                  <span className="text-sm md:text-base font-mono font-medium text-primary">shop.puresoap.com</span>
+                  <span className="text-sm md:text-base font-mono font-medium text-primary">puresoaps.com</span>
                   <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center ml-1 animate-[bounceIn_0.5s_ease-out_1s_both]">
                     <Check className="w-3 h-3 text-white" />
                   </div>
