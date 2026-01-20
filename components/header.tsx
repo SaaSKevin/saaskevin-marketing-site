@@ -27,6 +27,9 @@ export function Header() {
           <Link href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Features
           </Link>
+          <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Pricing
+          </Link>
           <Link href="#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             See It Live
           </Link>
@@ -54,22 +57,29 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
-            <Link 
-              href="#how-it-works" 
+            <Link
+              href="#how-it-works"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
             </Link>
-            <Link 
-              href="#features" 
+            <Link
+              href="#features"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </Link>
-            <Link 
-              href="#demo" 
+            <Link
+              href="#pricing"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link
+              href="#demo"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
