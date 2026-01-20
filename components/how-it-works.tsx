@@ -99,7 +99,7 @@ function SetupContent() {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">Add a new CNAME record that users will point their custom domains at.</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">Add a new CNAME record (your users will point their custom domains to this)</h3>
         {/* <p className="text-muted-foreground">
           Create a CNAME record (like shop.yoursaas.com) that users will point their custom domains at.
         </p> */}
@@ -216,7 +216,7 @@ function WidgetContent() {
           </div>
           <div className="flex items-center gap-2">
             <div className="flex-1 bg-secondary rounded-lg px-3 py-2 text-sm text-muted-foreground">
-              shop.puresoaps.com
+              puresoaps.com
             </div>
             <button className="px-3 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
               Manage
@@ -281,7 +281,7 @@ renderDashboard(user)`
         <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-4 text-sm">
           <div className="flex items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
             <span className="text-muted-foreground">User visits</span>
-            <span className="font-mono text-primary">shop.puresoaps.com</span>
+            <span className="font-mono text-primary">puresoaps.com</span>
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
@@ -293,7 +293,7 @@ renderDashboard(user)`
           <span className="text-muted-foreground md:hidden">↓</span>
           <div className="flex items-center gap-2 bg-emerald-500/10 rounded-lg px-3 py-2 border border-emerald-500/20">
             <Check className="w-4 h-4 text-emerald-500" />
-            <span className="text-emerald-600">You serve their store</span>
+            <span className="text-emerald-600">You serve their content</span>
           </div>
         </div>
       </div>
