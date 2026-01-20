@@ -162,7 +162,7 @@ function WidgetContent() {
 <script src="https://js.saaskevin.com/v1"></script>
 <script>
   SaaSKevin.init({
-    customerId: "{{current_user_id}}"
+    customerId: "{{current_user_id}}" // Replace with the logged-in user's ID
   }).mount('#domain-settings');
 </script>`
 
