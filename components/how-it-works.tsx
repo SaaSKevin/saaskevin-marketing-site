@@ -128,7 +128,7 @@ function SetupContent() {
             </div>
             <div className="relative">
               <div className="bg-card rounded-lg px-3 py-2 border border-border text-sm font-mono pr-10 fix-overflow">
-                proxy.saaskevin.com
+                app.yoursaas.com
               </div>
               <button
                 type="button"
