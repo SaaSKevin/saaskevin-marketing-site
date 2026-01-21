@@ -98,15 +98,15 @@ function SetupContent() {
         </p>
       </div>
 
-      <div>
+      {/* <div>
         <h3 className="text-lg font-semibold text-foreground mb-2">Add a new CNAME record (your users will point their custom domains to this)</h3>
-        {/* <p className="text-muted-foreground">
+        <p className="text-muted-foreground">
           Create a CNAME record (like shop.yoursaas.com) that users will point their custom domains at.
-        </p> */}
-      </div>
+        </p>
+      </div> */}
 
       {/* Visual DNS setup */}
-      <div className="bg-secondary/50 rounded-xl p-6 border border-border">
+      {/* <div className="bg-secondary/50 rounded-xl p-6 border border-border">
         <div className="flex items-center gap-2 mb-4">
           <Globe className="w-5 h-5 text-primary" />
           <span className="font-medium text-foreground">Add DNS Record</span>
@@ -145,12 +145,12 @@ function SetupContent() {
         <p className="text-xs text-muted-foreground mt-4">
           This creates a branded CNAME target for your users’ custom domains (traffic to <span className="font-mono text-primary">shop.yoursaas.com</span> will be proxied to <span className="font-mono text-primary">app.yoursaas.com</span>).
         </p>
-      </div>
+      </div> */}
 
-      <div className="flex items-center gap-3 text-sm text-muted-foreground">
+      {/* <div className="flex items-center gap-3 text-sm text-muted-foreground">
         <Check className="w-4 h-4 text-emerald-500" />
         <span>No code changes to your app required for this step</span>
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -405,7 +405,7 @@ export function HowItWorks() {
         </div>
 
         {/* Content */}
-        <div className="bg-card rounded-2xl border border-border p-6 md:p-8 min-h-[400px]">
+        <div className="bg-card rounded-2xl border border-border p-6 md:p-8 min-h-[300px]">
           {renderContent()}
         </div>
       </div>
