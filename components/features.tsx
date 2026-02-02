@@ -97,8 +97,8 @@ export function Features() {
             <div className="text-sm text-muted-foreground">Of backend code needed</div>
           </div>
           <div className="bg-card rounded-xl border border-border p-6 text-center">
-            <div className="text-4xl font-bold text-primary mb-1">$0.20</div>
-            <div className="text-sm text-muted-foreground">Per domain/month (minimum 100)</div>
+            <div className="text-4xl font-bold text-primary mb-1">$0.09</div>
+            <div className="text-sm text-muted-foreground">Per domain/month (after first 100)</div>
           </div>
         </div>
       </div>
