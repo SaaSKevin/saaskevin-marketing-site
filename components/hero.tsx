@@ -4,7 +4,25 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Globe, Check, X } from "lucide-react"
 
-export function Hero() {
+export interface HeroProps {
+  badgeText?: string
+  title?: React.ReactNode
+  description?: string
+  primaryCtaText?: string
+  primaryCtaLink?: string
+}
+
+export function Hero({
+  badgeText = "For SaaS",
+  title = (
+    <>
+      Add <span className="text-primary">Custom Domains to Your SaaS</span> in 5 Minutes
+    </>
+  ),
+  description = "SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.",
+  primaryCtaText = "Join the Waitlist",
+  primaryCtaLink = "#waitlist"
+}: HeroProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="mx-auto max-w-6xl px-6">
@@ -13,17 +31,15 @@ export function Hero() {
           <div className="flex flex-col lg:items-start lg:text-left items-center text-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-sm text-muted-foreground mb-8 border border-border">
               <Sparkles className="h-3.5 w-3.5 text-primary" />
-              <span>For SaaS</span>
+              <span>{badgeText}</span>
             </div>
 
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl max-w-xl text-balance leading-[1.1]">
-              Add{" "}
-              <span className="text-primary">Custom Domains to Your SaaS</span>
-              {" "}in 5 Minutes
+              {title}
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed text-pretty">
-              SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.
+              {description}
             </p>
 
             {/* <p className="mt-3 text-sm text-muted-foreground/80 font-mono">
@@ -32,8 +48,8 @@ export function Hero() {
 
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <Button size="lg" className="bg-primary hover:bg-accent text-primary-foreground px-8 h-12 text-base" asChild>
-                <Link href="#waitlist">
-                  Join the Waitlist
+                <Link href={primaryCtaLink}>
+                  {primaryCtaText}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
