@@ -39,6 +39,9 @@ export function Footer() {
             <Link href="/terms" className="hover:text-foreground transition-colors">
               Terms
             </Link>
+            <Link href="/refunds" className="hover:text-foreground transition-colors">
+              Refunds
+            </Link>
             <Link href="mailto:hello@saaskevin.com" className="hover:text-foreground transition-colors">
               Contact
             </Link>
