@@ -106,8 +106,8 @@ export default function RefundsPage() {
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Email us at{" "}
-                  <Link href="mailto:billing@saaskevin.com" className="text-primary hover:underline">
-                    billing@saaskevin.com
+                  <Link href="mailto:support@@saaskevin.com" className="text-primary hover:underline">
+                    support@@saaskevin.com
                   </Link>
                 </li>
                 <li>Include your account email and team name</li>
@@ -144,14 +144,14 @@ export default function RefundsPage() {
               <ul className="list-none text-muted-foreground space-y-2">
                 <li>
                   <strong className="text-foreground">Billing inquiries:</strong>{" "}
-                  <Link href="mailto:billing@saaskevin.com" className="text-primary hover:underline">
-                    billing@saaskevin.com
+                  <Link href="mailto:support@@saaskevin.com" className="text-primary hover:underline">
+                    support@@saaskevin.com
                   </Link>
                 </li>
                 <li>
                   <strong className="text-foreground">General support:</strong>{" "}
-                  <Link href="mailto:hello@saaskevin.com" className="text-primary hover:underline">
-                    hello@saaskevin.com
+                  <Link href="mailto:support@@saaskevin.com" className="text-primary hover:underline">
+                    support@@saaskevin.com
                   </Link>
                 </li>
               </ul>

@@ -34,7 +34,7 @@ export default function PrivacyPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Information We Collect</h2>
-              
+
               <h3 className="text-lg font-medium text-foreground mb-3">Account Information</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 When you create an account, we collect:
@@ -193,14 +193,14 @@ export default function PrivacyPage() {
               <ul className="list-none text-muted-foreground space-y-2">
                 <li>
                   <strong className="text-foreground">Email:</strong>{" "}
-                  <Link href="mailto:privacy@saaskevin.com" className="text-primary hover:underline">
-                    privacy@saaskevin.com
+                  <Link href="mailto:legal@saaskevin.com" className="text-primary hover:underline">
+                    legal@saaskevin.com
                   </Link>
                 </li>
                 <li>
                   <strong className="text-foreground">General inquiries:</strong>{" "}
-                  <Link href="mailto:hello@saaskevin.com" className="text-primary hover:underline">
-                    hello@saaskevin.com
+                  <Link href="mailto:support@saaskevin.com" className="text-primary hover:underline">
+                    support@saaskevin.com
                   </Link>
                 </li>
               </ul>

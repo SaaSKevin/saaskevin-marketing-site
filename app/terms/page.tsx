@@ -226,8 +226,8 @@ export default function TermsPage() {
                 </li>
                 <li>
                   <strong className="text-foreground">General inquiries:</strong>{" "}
-                  <Link href="mailto:hello@saaskevin.com" className="text-primary hover:underline">
-                    hello@saaskevin.com
+                  <Link href="mailto:support@saaskevin.com" className="text-primary hover:underline">
+                    support@saaskevin.com
                   </Link>
                 </li>
               </ul>
