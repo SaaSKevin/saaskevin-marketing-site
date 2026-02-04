@@ -4,7 +4,7 @@ import { HowItWorks } from "@/components/how-it-works"
 import { Features } from "@/components/features"
 import { Pricing } from "@/components/pricing"
 import { ProductDemo } from "@/components/product-demo"
-import { Waitlist } from "@/components/waitlist"
+import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <Features />
       <Pricing />
       <ProductDemo />
-      <Waitlist />
+      <CTA />
       <Footer />
     </main>
   )

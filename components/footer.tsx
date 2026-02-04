@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,9 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">SK</span>
-            </div>
+            <Image src="/icon.svg" alt="SaaSKevin Logo" width={32} height={32} className="rounded-lg" />
             <span className="text-lg font-semibold text-foreground tracking-tight">SaaSKevin</span>
           </div>
 
@@ -21,9 +20,6 @@ export function Footer() {
             </Link>
             <Link href="#demo" className="hover:text-foreground transition-colors">
               Demo
-            </Link>
-            <Link href="#waitlist" className="hover:text-foreground transition-colors">
-              Waitlist
             </Link>
           </div>
         </div>

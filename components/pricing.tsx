@@ -58,7 +58,7 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button className="w-full bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href="#waitlist" aria-label="Join the waitlist" tabIndex={0}>
+                <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
                   Start Building
                 </Link>
               </Button>
@@ -115,8 +115,8 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button variant="outline" className="w-full border-border text-foreground hover:text-foreground hover:bg-transparent" asChild>
-                <Link href="#waitlist" aria-label="Get early access" tabIndex={0}>
-                  Join Waitlist
+                <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
+                  Get Started
                 </Link>
               </Button>
             </div>

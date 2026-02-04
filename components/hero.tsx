@@ -20,8 +20,8 @@ export function Hero({
     </>
   ),
   description = "SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.",
-  primaryCtaText = "Join the Waitlist",
-  primaryCtaLink = "#waitlist"
+  primaryCtaText = "Get Started",
+  primaryCtaLink = "https://app.saaskevin.com/auth/join"
 }: HeroProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">

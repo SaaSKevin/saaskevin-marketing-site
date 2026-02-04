@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { Users, Settings, Check, Loader2, Globe, AlertCircle, Copy, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 function EndUserDemo() {
   const [step, setStep] = useState(0)
@@ -189,9 +190,7 @@ function AdminDemo() {
         {/* Sidebar */}
         <div className="w-48 bg-secondary/30 border-r border-border p-4 hidden sm:block">
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-6 h-6 rounded bg-primary flex items-center justify-center">
-              <span className="text-xs font-bold text-primary-foreground">SK</span>
-            </div>
+            <Image src="/icon.svg" alt="SaaSKevin Logo" width={24} height={24} className="rounded" />
             <span className="font-semibold text-foreground text-sm">SaaSKevin</span>
           </div>
           <nav className="space-y-1">
@@ -368,7 +367,7 @@ export function ProductDemo() {
 
         <div className="mt-10 text-center">
           <Button className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-            <Link href="#waitlist">Get Early Access</Link>
+            <Link href="https://app.saaskevin.com/auth/join">Get Started</Link>
           </Button>
         </div>
       </div>

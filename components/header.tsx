@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -13,9 +14,7 @@ export function Header() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">SK</span>
-            </div>
+            <Image src="/icon.svg" alt="SaaSKevin Logo" width={32} height={32} className="rounded-lg" />
             <span className="text-xl font-semibold text-foreground tracking-tight">SaaSKevin</span>
           </div>
         </Link>
@@ -37,10 +36,10 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="sm" className="text-muted-foreground" asChild>
-            <Link href="#waitlist">Log In</Link>
+            <Link href="https://app.saaskevin.com/auth/login">Log In</Link>
           </Button>
           <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-            <Link href="#waitlist">Join Waitlist</Link>
+            <Link href="https://app.saaskevin.com/auth/join">Get Started</Link>
           </Button>
         </div>
 
@@ -87,10 +86,10 @@ export function Header() {
             </Link>
             <div className="flex flex-col gap-2 pt-2 border-t border-border">
               <Button variant="ghost" size="sm" className="justify-start text-muted-foreground" asChild>
-                <Link href="#waitlist" onClick={() => setMobileMenuOpen(false)}>Log In</Link>
+                <Link href="https://app.saaskevin.com/auth/login" onClick={() => setMobileMenuOpen(false)}>Log In</Link>
               </Button>
               <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href="#waitlist" onClick={() => setMobileMenuOpen(false)}>Join Waitlist</Link>
+                <Link href="https://app.saaskevin.com/auth/join" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
               </Button>
             </div>
           </div>

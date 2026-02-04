@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Pricing } from "@/components/pricing"
-import { Waitlist } from "@/components/waitlist"
+import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default function PricingPage() {
       <div className="pt-20">
         <Pricing />
       </div>
-      <Waitlist />
+      <CTA />
       <Footer />
     </main>
   )
