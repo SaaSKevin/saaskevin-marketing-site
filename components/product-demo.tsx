@@ -3,8 +3,10 @@
 import React from "react"
 
 import { useState, useEffect } from "react"
-import { Users, Settings, Check, Loader2, Globe, AlertCircle, Copy, ExternalLink } from "lucide-react"
+import { Users, Settings, Shield, Check, Loader2, Globe, AlertCircle, Copy, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -65,7 +67,7 @@ function EndUserDemo() {
                     className="flex-1 h-10 px-3 rounded-md border border-border bg-background text-foreground text-sm"
                   />
                   <Button className="bg-primary hover:bg-accent text-primary-foreground">
-                    Verify
+                    Add
                   </Button>
                 </div>
               </div>
@@ -74,29 +76,108 @@ function EndUserDemo() {
 
           {step === 2 && (
             <div className="animate-fadeIn space-y-4">
+              {/* Automatic DNS */}
               <div className="p-4 bg-secondary/50 rounded-lg border border-border">
-                <p className="text-sm font-medium text-foreground mb-3">Add this CNAME record:</p>
-                <div className="space-y-2 font-mono text-xs">
-                  <div className="flex justify-between p-2 bg-background rounded border border-border">
-                    <span className="text-muted-foreground">Type</span>
-                    <span className="text-foreground">CNAME</span>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-medium text-foreground">Add records automatically</p>
+                    {/* <p className="text-xs text-muted-foreground mt-1">
+                      Sign in to your DNS provider and we'll add the DNS records for you.
+                    </p> */}
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      {[""].map((provider) => (
+                        <span
+                          key={provider}
+                          className="inline-flex items-center rounded-full border border-border bg-background px-2 py-0.5 text-[11px] text-muted-foreground"
+                        >
+                          {provider}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex justify-between p-2 bg-background rounded border border-border">
-                    <span className="text-muted-foreground">Name</span>
-                    <span className="text-foreground">shop</span>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-border bg-transparent hover:bg-background"
+                  >
+                    Sign in with Cloudflare
+                  </Button>
+                </div>
+                {/* <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <AlertCircle className="w-4 h-4" />
+                  Not supported? Use manual DNS below.
+                </div> */}
+              </div>
+
+              {/* Manual DNS */}
+              <div className="p-4 bg-secondary/50 rounded-lg border border-border">
+                <div className="flex items-center justify-between gap-3 mb-2">
+                  <p className="text-sm font-medium text-foreground">Add these CNAME records</p>
+                  <span className="text-[11px] px-2 py-0.5 rounded-full bg-yellow-500/10 text-yellow-600 border border-yellow-500/20">
+                    Pending verification
+                  </span>
+                </div>
+                {/* <p className="text-xs text-muted-foreground">
+                  Add <span className="font-medium text-foreground">routing</span> +{" "}
+                  <span className="font-medium text-foreground">ACME delegation</span> CNAMEs.
+                </p> */}
+
+                <div className="mt-3 space-y-3 font-mono text-xs">
+                  <div className="bg-background rounded border border-border">
+                    {/* <div className="px-2.5 py-2 border-b border-border text-[11px] text-muted-foreground">
+                      Routing
+                    </div> */}
+                    <div className="p-2.5 space-y-2">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Type</span>
+                        <span className="text-foreground">CNAME</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Name</span>
+                        <span className="text-foreground">shop</span>
+                      </div>
+                      <div className="flex justify-between items-center gap-2">
+                        <span className="text-muted-foreground">Target</span>
+                        <span className="inline-flex items-center gap-2 text-primary">
+                          proxy.saaskevin.com <Copy className="w-3 h-3 text-muted-foreground" />
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-between p-2 bg-background rounded border border-border items-center">
-                    <span className="text-muted-foreground">Target</span>
-                    <div className="flex items-center gap-2">
-                      <span className="text-primary">proxy.saaskevin.com</span>
-                      <Copy className="w-3 h-3 text-muted-foreground" />
+
+                  <div className="bg-background rounded border border-border">
+                    {/* <div className="px-2.5 py-2 border-b border-border text-[11px] text-muted-foreground">
+                      ACME delegation (for automatic SSL)
+                    </div> */}
+                    <div className="p-2.5 space-y-2">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Type</span>
+                        <span className="text-foreground">CNAME</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Name</span>
+                        <span className="text-foreground">_acme-challenge.shop</span>
+                      </div>
+                      <div className="flex justify-between items-center gap-2">
+                        <span className="text-muted-foreground">Target</span>
+                        <span className="inline-flex items-center gap-2 text-primary">
+                          acme_7f9a2b.acme.saaskevin.com{" "}
+                          <Copy className="w-3 h-3 text-muted-foreground" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Loader2 className="w-4 h-4 animate-spin text-primary" />
-                Checking DNS propagation...
+
+                <div className="mt-3 flex items-center justify-between gap-3">
+                  <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground">
+                    Verify records
+                  </Button>
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Loader2 className="w-3.5 h-3.5 animate-spin text-primary" />
+                    Checking DNS…
+                  </div>
+                </div>
               </div>
             </div>
           )}
@@ -108,11 +189,11 @@ function EndUserDemo() {
                   <Check className="w-5 h-5 text-emerald-500" />
                   <span className="font-medium text-foreground">DNS Verified</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Provisioning SSL certificate...</p>
+                {/* <p className="text-sm text-muted-foreground">Provisioning SSL certificate…</p> */}
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Loader2 className="w-4 h-4 animate-spin text-primary" />
-                Issuing SSL certificate...
+                Issuing certificate...
               </div>
             </div>
           )}
@@ -122,9 +203,9 @@ function EndUserDemo() {
               <div className="p-4 bg-emerald-500/10 rounded-lg border border-emerald-500/30">
                 <div className="flex items-center gap-2 mb-2">
                   <Check className="w-5 h-5 text-emerald-500" />
-                  <span className="font-medium text-foreground">Domain Active</span>
+                  <span className="font-medium text-foreground">SSL Active</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-3">Your custom domain is now live!</p>
+                <p className="text-sm text-muted-foreground mb-3">Your custom domain is now live.</p>
                 <a href="#" className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
                   https://yourcustomer.com
                   <ExternalLink className="w-3 h-3" />
@@ -132,7 +213,7 @@ function EndUserDemo() {
               </div>
               <div className="flex items-center justify-between text-xs text-muted-foreground">
                 <span>SSL: <span className="text-emerald-500">Active</span></span>
-                <span>CDN: <span className="text-emerald-500">Enabled</span></span>
+                {/* <span>CDN: <span className="text-emerald-500">Enabled</span></span> */}
               </div>
             </div>
           )}
@@ -169,7 +250,14 @@ function EndUserDemo() {
 }
 
 function AdminDemo() {
-  const [activeSection, setActiveSection] = useState<'overview' | 'domains' | 'settings'>('overview')
+  const [activeSection, setActiveSection] = useState<"setup" | "domains" | "security">("setup")
+  const [requireSignedToken, setRequireSignedToken] = useState(true)
+  const [rotatedSecretKey, setRotatedSecretKey] = useState<string | null>(null)
+
+  const handleRotateSecret = () => {
+    const suffix = Math.random().toString(16).slice(2, 8)
+    setRotatedSecretKey(`sk_live_${suffix}…`)
+  }
 
   return (
     <div className="bg-card rounded-xl border border-border overflow-hidden">
@@ -181,7 +269,7 @@ function AdminDemo() {
           <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
         </div>
         <div className="flex-1 bg-background/60 rounded-md px-3 py-1 text-xs text-muted-foreground font-mono">
-          dashboard.saaskevin.com
+          app.saaskevin.com/teams/acme/custom-domains/setup
         </div>
       </div>
 
@@ -195,9 +283,9 @@ function AdminDemo() {
           </div>
           <nav className="space-y-1">
             {[
-              { id: 'overview', label: 'Overview', icon: BarChart },
-              { id: 'domains', label: 'Domains', icon: Globe },
-              { id: 'settings', label: 'Settings', icon: Settings },
+              { id: "setup", label: "Setup", icon: Settings },
+              { id: "domains", label: "Domains", icon: Globe },
+              { id: "security", label: "Security", icon: Shield },
             ].map((item) => (
               <button
                 type="button"
@@ -218,48 +306,67 @@ function AdminDemo() {
 
         {/* Main content */}
         <div className="flex-1 p-6">
-          {activeSection === 'overview' && (
+          {activeSection === "setup" && (
             <div className="animate-fadeIn">
-              <h4 className="font-semibold text-foreground mb-4">Overview</h4>
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                <div className="p-3 bg-secondary/50 rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-primary">47</div>
-                  <div className="text-xs text-muted-foreground">Active Domains</div>
+              <h4 className="font-semibold text-foreground mb-4">Site setup</h4>
+
+              <div className="space-y-3">
+                <div className="p-3 bg-secondary/30 rounded-lg border border-border">
+                  <div className="text-xs text-muted-foreground mb-1">Origin hostname</div>
+                  <div className="text-sm font-mono text-foreground">app.yoursaas.com</div>
+                  {/* <div className="mt-2 text-xs text-muted-foreground">Fallback URL (optional)</div>
+                  <div className="text-xs font-mono text-muted-foreground">
+                    https://app.yoursaas.com/not-found
+                  </div> */}
                 </div>
-                <div className="p-3 bg-secondary/50 rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-foreground">2.4M</div>
-                  <div className="text-xs text-muted-foreground">Requests/day</div>
-                </div>
-              </div>
-              <div className="p-3 bg-emerald-500/10 rounded-lg border border-emerald-500/30">
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-500" />
-                  <span className="text-sm text-foreground">All systems operational</span>
-                </div>
+
+                {/* <div className="p-3 bg-secondary/30 rounded-lg border border-border">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <div className="text-xs text-muted-foreground mb-1">Branded CNAME (optional)</div>
+                      <div className="text-sm font-mono text-foreground">custom-domains.yoursaas.com</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        Lets users CNAME to your domain instead of a SaaSKevin hostname.
+                      </div>
+                    </div>
+                    <span className="text-[11px] px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                      Optional
+                    </span>
+                  </div>
+                </div> */}
+
+                {/* <div className="p-3 bg-secondary/30 rounded-lg border border-border">
+                  <div className="text-xs text-muted-foreground mb-1">Site public API key (widget)</div>
+                  <div className="text-sm font-mono text-muted-foreground">pk_live_abc123…</div>
+                  <div className="mt-2 text-[11px] text-muted-foreground">
+                    Used as <span className="font-mono text-foreground">apiKey</span> in{" "}
+                    <span className="font-mono text-foreground">SaaSKevin.init</span>.
+                  </div>
+                </div> */}
               </div>
             </div>
           )}
 
-          {activeSection === 'domains' && (
+          {activeSection === "domains" && (
             <div className="animate-fadeIn">
-              <h4 className="font-semibold text-foreground mb-4">Active Domains</h4>
+              <h4 className="font-semibold text-foreground mb-4">Domains</h4>
               <div className="space-y-2">
                 {[
-                  { domain: 'yourcustomer.com', user: 'user_abc', status: 'active' },
-                  { domain: 'shop.bobstees.io', user: 'user_xyz', status: 'active' },
-                  { domain: 'store.corp.net', user: 'user_123', status: 'pending' },
+                  { domain: "yourcustomer.com", customerId: "cust_abc", status: "ssl_active" },
+                  { domain: "shop.bobstees.io", customerId: "cust_xyz", status: "ssl_active" },
+                  { domain: "store.corp.net", customerId: "cust_123", status: "pending_ssl" },
                 ].map((item) => (
                   <div key={item.domain} className="flex items-center justify-between p-3 bg-secondary/30 rounded-lg border border-border">
                     <div>
                       <div className="text-sm font-medium text-foreground">{item.domain}</div>
-                      <div className="text-xs text-muted-foreground font-mono">{item.user}</div>
+                      <div className="text-xs text-muted-foreground font-mono">{item.customerId}</div>
                     </div>
                     <div className={`px-2 py-1 rounded text-xs font-medium ${
-                      item.status === 'active'
-                        ? 'bg-emerald-500/10 text-emerald-500'
-                        : 'bg-yellow-500/10 text-yellow-500'
+                      item.status === "ssl_active"
+                        ? "bg-emerald-500/10 text-emerald-600"
+                        : "bg-yellow-500/10 text-yellow-700"
                     }`}>
-                      {item.status}
+                      {item.status === "ssl_active" ? "SSL active" : "Provisioning SSL"}
                     </div>
                   </div>
                 ))}
@@ -267,28 +374,64 @@ function AdminDemo() {
             </div>
           )}
 
-          {activeSection === 'settings' && (
+          {activeSection === "security" && (
             <div className="animate-fadeIn">
-              <h4 className="font-semibold text-foreground mb-4">Configuration</h4>
+              <h4 className="font-semibold text-foreground mb-4">Security</h4>
+
               <div className="space-y-3">
-                {/* <div>
-                  <label className="text-xs text-muted-foreground block mb-1">Origin Server</label>
-                  <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-foreground">
-                    app.yoursaas.com
-                  </div>
-                </div> */}
-                <div>
-                  <label className="text-xs text-muted-foreground block mb-1">API Key</label>
-                  <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-muted-foreground">
-                    pk_live_abc123...
+                <div className="p-3 bg-secondary/30 rounded-lg border border-border">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <div className="text-sm font-medium text-foreground">Require signed customer token</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        When enabled, widget will require an expiring server‑minted token{" "}
+                        (<span className="font-mono text-foreground">hash</span>) in order to load.
+                      </div>
+                    </div>
+                    <label className="inline-flex items-center gap-2 text-xs text-muted-foreground">
+                      <input
+                        type="checkbox"
+                        checked={requireSignedToken}
+                        onChange={(e) => setRequireSignedToken(e.target.checked)}
+                        aria-label="Require signed customer token"
+                        className="h-4 w-4 rounded border-border"
+                      />
+                      {requireSignedToken ? "On" : "Off"}
+                    </label>
                   </div>
                 </div>
-                {/* <div>
-                  <label className="text-xs text-muted-foreground block mb-1">Webhook URL</label>
-                  <div className="p-2.5 bg-secondary/50 rounded border border-border text-sm font-mono text-muted-foreground">
-                    https://app.yoursaas.com/webhooks/saaskevin
+
+                <div className="p-3 bg-secondary/30 rounded-lg border border-border">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="min-w-0">
+                      <div className="text-sm font-medium text-foreground">Origin verification secret</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        Use it to verify <span className="font-mono text-foreground">X-SaaSKevin-Signature</span> on your origin server/app.
+                        {/* The secret is shown once after rotation. */}
+                      </div>
+                    </div>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-border bg-transparent hover:bg-background"
+                      onClick={handleRotateSecret}
+                    >
+                      Rotate
+                    </Button>
                   </div>
-                </div> */}
+
+                  <div className="mt-3 rounded-md border border-border bg-background/60 px-3 py-2 text-xs font-mono text-muted-foreground">
+                    {rotatedSecretKey ?? "Rotate to generate a new secret…"}
+                  </div>
+
+                  {/* <div className="mt-3 text-[11px] text-muted-foreground">
+                    Signed headers include{" "}
+                    <span className="font-mono text-foreground">X-SaaSKevin-Customer-ID</span>,{" "}
+                    <span className="font-mono text-foreground">X-SaaSKevin-Hostname</span>,{" "}
+                    <span className="font-mono text-foreground">X-SaaSKevin-Timestamp</span>,{" "}
+                    <span className="font-mono text-foreground">X-SaaSKevin-Signature</span>.
+                  </div> */}
+                </div>
               </div>
             </div>
           )}
@@ -320,17 +463,27 @@ function BarChart(props: React.SVGProps<SVGSVGElement>) {
 
 export function ProductDemo() {
   const [activeTab, setActiveTab] = useState<"end-user" | "admin">("end-user")
+  const demoMascot = activeTab === "end-user" ? MASCOTS.cloudflareSignin : MASCOTS.dnsWatcher
 
   return (
     <section id="demo" className="py-20 md:py-28 bg-secondary/30">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center mb-12">
+        <div className="relative text-center mb-12">
+          <div className="absolute -top-10 right-0 hidden md:block">
+            <Mascot
+              src={demoMascot}
+              decorative
+              sizes="160px"
+              className="w-40 h-auto rotate-[-3deg] opacity-95"
+            />
+          </div>
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">See It In Action</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             Beautiful UX for everyone
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Your users get a polished domain setup experience. You get a simple admin dashboard.
+            Your users get a polished domain setup experience.
+            You get an admin dashboard for tracking and troubleshooting.
           </p>
         </div>
 

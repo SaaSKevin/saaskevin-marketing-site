@@ -1,20 +1,23 @@
 import { Check } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
-const pricingHighlights = [
-  "First 100 domains free",
-  "First 1M requests/mo free",
-  "Automatic SSL included",
-  "Unlimited teams & users",
-]
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 
 /* Pricing section */
 export function Pricing() {
   return (
     <section id="pricing" className="py-20 md:py-28 bg-secondary/30">
       <div className="mx-auto max-w-5xl px-6">
-        <div className="text-center mb-12">
+        <div className="relative text-center mb-12">
+          <div className="absolute -top-10 right-0 hidden md:block">
+            <Mascot
+              src={MASCOTS.pricingMascot}
+              decorative
+              sizes="160px"
+              className="w-40 h-auto rotate-[2deg] opacity-95"
+            />
+          </div>
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Pricing</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             Simple, usage-based pricing
@@ -28,7 +31,7 @@ export function Pricing() {
           <div className="bg-card rounded-2xl border border-border p-8">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h3 className="text-xl font-semibold text-foreground">Starter</h3>
+                <h3 className="text-xl font-semibold text-foreground">Free</h3>
                 <p className="text-sm text-muted-foreground mt-1">Perfect for side projects</p>
               </div>
               <div className="text-right">
@@ -52,14 +55,14 @@ export function Pricing() {
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Community support</span>
+                <span>Docs and help center</span>
               </li>
             </ul>
 
             <div className="mt-8">
-              <Button className="w-full bg-primary hover:bg-accent text-primary-foreground" asChild>
+              <Button variant="outline" className="w-full border-border text-foreground hover:text-foreground hover:bg-transparent" asChild>
                 <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
-                  Start Building
+                  Start Building For Free
                 </Link>
               </Button>
             </div>
@@ -67,27 +70,27 @@ export function Pricing() {
 
           <div className="bg-card rounded-2xl border border-primary/30 p-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-xl">
-              RECOMMENDED
+              Pay as you grow
             </div>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h3 className="text-xl font-semibold text-foreground">Scale</h3>
-                <p className="text-sm text-muted-foreground mt-1">Pay as you grow</p>
+                <h3 className="text-xl font-semibold text-foreground">Business</h3>
+                <p className="text-sm text-muted-foreground mt-1">Perfect for businesses</p>
               </div>
               <div className="text-right">
-                <div className="text-3xl font-bold text-foreground">Usage</div>
-                <div className="text-xs text-muted-foreground">based pricing</div>
+                <div className="text-3xl font-bold text-foreground">$0.09</div>
+                <div className="text-xs text-muted-foreground">per domain per month</div>
               </div>
             </div>
 
             <div className="space-y-4 mb-6">
-              <div className="rounded-xl bg-secondary/50 border border-border p-4">
+              {/* <div className="rounded-xl bg-secondary/50 border border-border p-4">
                 <div className="flex justify-between items-baseline mb-1">
                   <span className="font-medium text-foreground">Domains</span>
                   <span className="font-bold text-foreground">$0.09<span className="text-muted-foreground text-xs font-normal">/mo</span></span>
                 </div>
                 <p className="text-xs text-muted-foreground">per domain after first 100</p>
-              </div>
+              </div> */}
 
               <div className="rounded-xl bg-secondary/50 border border-border p-4">
                 <div className="flex justify-between items-baseline mb-1">
@@ -101,12 +104,16 @@ export function Pricing() {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Everything in Starter</span>
+                <span>Everything in Free</span>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Volume discounts available</span>
+                <span>Billing only starts after first 100 domains</span>
               </div>
+              {/* <div className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
+                <span>Volume discounts available</span>
+              </div> */}
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
                 <span>Priority support</span>
@@ -114,9 +121,9 @@ export function Pricing() {
             </div>
 
             <div className="mt-8">
-              <Button variant="outline" className="w-full border-border text-foreground hover:text-foreground hover:bg-transparent" asChild>
+              <Button className="w-full bg-primary hover:bg-accent text-primary-foreground" asChild>
                 <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
-                  Get Started
+                  Start Building For Free
                 </Link>
               </Button>
             </div>

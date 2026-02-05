@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 import { CheckCircle2, ArrowRight } from "lucide-react"
 
 export function CTA() {
@@ -12,6 +14,15 @@ export function CTA() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+
+          <div className="absolute bottom-0 right-0 hidden md:block translate-y-8 translate-x-6">
+            <Mascot
+              src={MASCOTS.waveHello}
+              decorative
+              sizes="176px"
+              className="w-44 h-auto rotate-[-2deg] opacity-90"
+            />
+          </div>
 
           <div className="relative px-6 py-16 md:px-12 md:py-20">
             <div className="max-w-2xl mx-auto text-center">

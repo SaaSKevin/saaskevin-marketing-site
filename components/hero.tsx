@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 import { ArrowRight, Sparkles, Globe, Check, X } from "lucide-react"
 
 export interface HeroProps {
@@ -13,7 +15,7 @@ export interface HeroProps {
 }
 
 export function Hero({
-  badgeText = "For SaaS",
+  badgeText = "100 Free Custom Domains", // "For SaaS",
   title = (
     <>
       Add <span className="text-primary">Custom Domains to Your SaaS</span> in 5 Minutes
@@ -131,6 +133,16 @@ export function Hero({
                 </circle>
               </svg>
             </div>
+
+            {/* Mascot accent (desktop only) */}
+            {/* <div className="absolute -bottom-10 -right-6 hidden md:block z-20">
+              <Mascot
+                src={MASCOTS.heroDomain}
+                decorative
+                sizes="176px"
+                className="w-44 h-auto rotate-[4deg] animate-[float_4s_ease-in-out_infinite] opacity-95"
+              />
+            </div> */}
 
             <div className="relative z-10 flex flex-col items-center gap-4">
               {/* Before URL - Ugly subdomain with fade in animation */}

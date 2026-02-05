@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import { Settings, Code2, Shield, Rocket, Check, Copy, Globe, ArrowRight } from "lucide-react"
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 import { cn } from "@/lib/utils"
 
 const tabs = [
@@ -10,7 +12,7 @@ const tabs = [
     number: "01",
     icon: Settings,
     title: "Connect Your App",
-    time: "2 min",
+    time: "1 min",
   },
   {
     id: "widget",
@@ -24,7 +26,7 @@ const tabs = [
     number: "03",
     icon: Shield,
     title: "Read One Header",
-    time: "2 min",
+    time: "3 min",
   },
   // {
   //   id: "done",
@@ -36,18 +38,10 @@ const tabs = [
 ]
 
 function SetupContent() {
-  const [copied, setCopied] = useState(false)
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("edge.saaskevin.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
-
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">Tell SaaSKevin your origin server (where your app already runs)</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">Tell SaaSKevin where your app/server already runs</h3>
         {/* <p className="text-muted-foreground">
           Enter your origin in SaaSKevin.
         </p> */}
@@ -90,13 +84,33 @@ function SetupContent() {
             <div className="col-span-3 bg-card rounded-lg px-3 py-2 border border-primary/30 text-sm font-mono text-primary fix-overflow">
               app.yoursaas.com
             </div>
+            {/* <div className="col-span-3 bg-card rounded-lg px-3 py-2 border border-border text-sm text-muted-foreground fix-overflow">
+              https://app.yoursaas.com/not-found <span className="text-muted-foreground/70">(fallback, optional)</span>
+            </div> */}
           </div>
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">
-          This is your existing app host or server. You keep it pointed at your current hosting provider — SaaSKevin proxies custom domain traffic to it.
+          This is your existing app host or server. SaaSKevin will simply proxy custom domain traffic to it.
         </p>
       </div>
+
+      {/* Optional: branded CNAME */}
+      {/* <div className="bg-secondary/50 rounded-xl p-6 border border-border">
+        <div className="flex items-center gap-2 mb-4">
+          <Globe className="w-5 h-5 text-primary" />
+          <span className="font-medium text-foreground">Branded CNAME (optional)</span>
+        </div>
+
+        <div className="space-y-3">
+          <div className="bg-card rounded-lg px-3 py-2 border border-border text-sm font-mono text-muted-foreground fix-overflow">
+            custom-domains.yoursaas.com
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Give your users a branded DNS target (instead of pointing to a SaaSKevin hostname). We can guide setup manually, or offer one‑click DNS via Domain Connect when supported.
+          </p>
+        </div>
+      </div> */}
 
       {/* <div>
         <h3 className="text-lg font-semibold text-foreground mb-2">Add a new CNAME record (your users will point their custom domains to this)</h3>
@@ -162,7 +176,10 @@ function WidgetContent() {
 <script src="https://js.saaskevin.com/v1"></script>
 <script>
   SaaSKevin.init({
-    customerId: "{{current_user_id}}" // Replace with the logged-in user's ID
+    apiKey: "pk_live_…", // Teams → Custom Domains → Setup → select Site
+    customerId: "{{current_user_id}}", // Replace with your logged-in user's unique ID
+    // organizationId: "{{current_org_id}}", // Optional
+    // hash: "{{saaskevin_customer_token}}", // Optional; required if you enable signed tokens
   }).mount('#domain-settings');
 </script>`
 
@@ -183,47 +200,133 @@ function WidgetContent() {
       </div>
 
       {/* Code snippet */}
-      <div className="bg-foreground rounded-xl overflow-hidden">
-        <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-          <div className="flex items-center gap-2">
-            <div className="flex gap-1.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -inset-1 rounded-[18px] opacity-0 ring-2 ring-primary/40 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 motion-reduce:animate-none animate-[widgetHaloLoop_5.8s_ease-in-out_infinite]"
+        />
+        <div className="bg-foreground rounded-xl overflow-hidden">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+            <div className="flex items-center gap-2">
+              <div className="flex gap-1.5">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+              </div>
+              <span className="text-xs text-white/50 ml-2">settings.html</span>
             </div>
-            <span className="text-xs text-white/50 ml-2">settings.html</span>
-          </div>
-          <button
-            onClick={handleCopy}
-            className="flex items-center gap-1.5 text-xs text-white/50 hover:text-white/80 transition-colors"
-          >
-            {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-            {copied ? "Copied!" : "Copy"}
-          </button>
-        </div>
-        <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto">
-          <code>{code}</code>
-        </pre>
-      </div>
-
-      {/* Widget preview */}
-      <div className="bg-secondary/50 rounded-xl p-4 border border-border">
-        <p className="text-xs text-muted-foreground mb-3">What your users will see:</p>
-        <div className="bg-card rounded-lg border border-border p-4">
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-sm font-medium text-foreground">Custom Domain</span>
-            <span className="text-xs px-2 py-0.5 bg-emerald-500/10 text-emerald-600 rounded-full">Active</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="flex-1 bg-secondary rounded-lg px-3 py-2 text-sm text-muted-foreground">
-              yourcustomer.com
-            </div>
-            <button className="px-3 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
-              Manage
+            <button
+              type="button"
+              onClick={handleCopy}
+              aria-label="Copy widget snippet"
+              className="flex items-center gap-1.5 text-xs text-white/50 hover:text-white/80 transition-colors"
+            >
+              {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              {copied ? "Copied!" : "Copy"}
             </button>
           </div>
+          <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto">
+            <code>{code}</code>
+          </pre>
         </div>
       </div>
+
+      {/* Connector (code -> outcome) */}
+      {/* <div className="flex flex-col items-center justify-center gap-2">
+        <div className="relative flex items-center justify-center w-full">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/0 via-primary/30 to-primary/0 motion-reduce:animate-none animate-[widgetFlowLine_1.8s_linear_infinite]"
+          />
+          <span className="relative inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground shadow-sm">
+            <span className="font-mono text-foreground/80">mount(&apos;#domain-settings&apos;)</span>
+            <ArrowRight
+              className="w-3.5 h-3.5 rotate-90 text-muted-foreground motion-reduce:animate-none animate-[widgetArrowLoop_1.35s_ease-in-out_infinite]"
+              aria-hidden="true"
+            />
+            <span>same widget UI</span>
+          </span>
+        </div>
+      </div> */}
+
+      {/* Widget preview */}
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -inset-1 rounded-[18px] opacity-0 ring-2 ring-primary/30 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 motion-reduce:animate-none animate-[widgetHaloLoop_5.8s_ease-in-out_2.9s_infinite]"
+        />
+        <div className="bg-secondary/50 rounded-xl p-4 border border-border">
+          <p className="text-xs text-muted-foreground mb-3">What your users will see:</p>
+          <div className="bg-card rounded-lg border border-border p-4">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-sm font-medium text-foreground">Custom Domain</span>
+              <span className="text-xs px-2 py-0.5 bg-emerald-500/10 text-emerald-600 rounded-full">Active</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="flex-1 bg-secondary rounded-lg px-3 py-2 text-sm text-muted-foreground">
+                yourcustomer.com
+              </div>
+              <button type="button" className="px-3 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
+                Manage
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes widgetHaloLoop {
+          0% {
+            opacity: 0;
+            transform: scale(0.985);
+          }
+          12% {
+            opacity: 1;
+            transform: scale(1);
+          }
+          34% {
+            opacity: 1;
+            transform: scale(1);
+          }
+          46% {
+            opacity: 0;
+            transform: scale(1);
+          }
+          100% {
+            opacity: 0;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes widgetArrowLoop {
+          0% {
+            opacity: 0.55;
+            transform: translateY(-2px) rotate(90deg);
+          }
+          50% {
+            opacity: 0.95;
+            transform: translateY(2px) rotate(90deg);
+          }
+          100% {
+            opacity: 0.55;
+            transform: translateY(0) rotate(90deg);
+          }
+        }
+
+        @keyframes widgetFlowLine {
+          0% {
+            opacity: 0.35;
+            transform: translateY(-10px);
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0.35;
+            transform: translateY(10px);
+          }
+        }
+      `}</style>
     </div>
   )
 }
@@ -231,9 +334,13 @@ function WidgetContent() {
 function VerifyContent() {
   const [copied, setCopied] = useState(false)
 
-  const code = `const customerId = req.headers['x-saaskevin-customer-id']
-const user = await getUser(customerId)
-renderDashboard(user)`
+  const code = `const customerId = req.headers["x-saaskevin-customer-id"]
+const hostname = req.headers["x-saaskevin-hostname"]
+
+// Optional: verify X-SaaSKevin-Signature using your origin verification secret.
+// (Adds confidence requests came from SaaSKevin.)
+
+serveCustomerContent(customerId, hostname)`
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code)
@@ -263,7 +370,9 @@ renderDashboard(user)`
             <span className="text-xs text-white/50 ml-2">middleware.js</span>
           </div>
           <button
+            type="button"
             onClick={handleCopy}
+            aria-label="Copy origin snippet"
             className="flex items-center gap-1.5 text-xs text-white/50 hover:text-white/80 transition-colors"
           >
             {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -287,7 +396,7 @@ renderDashboard(user)`
           <span className="text-muted-foreground md:hidden">↓</span>
           <div className="flex items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
             <span className="text-muted-foreground">We add</span>
-            <span className="font-mono text-primary">x-saaskevin-customer-id: user_123</span>
+            <span className="font-mono text-primary">x-saaskevin-customer-id: cust_123</span>
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
@@ -355,6 +464,24 @@ function DoneContent() {
 export function HowItWorks() {
   const [activeTab, setActiveTab] = useState("setup")
 
+  const showMascot = activeTab !== "widget"
+
+  const mascotSrc =
+    activeTab === "setup"
+      ? MASCOTS.plugIn
+      : activeTab === "widget"
+        ? MASCOTS.pointAtUI
+        : MASCOTS.guardLock
+
+  const gridColsClass = showMascot
+    ? activeTab === "verify"
+      ? "md:grid-cols-[1fr_180px]"
+      : "md:grid-cols-[1fr_180px]"
+    : "md:grid-cols-1"
+
+  const mascotSizes = activeTab === "verify" ? "180px" : "220px"
+  const mascotWidthClass = activeTab === "verify" ? "w-[180px]" : "w-56"
+
   const renderContent = () => {
     switch (activeTab) {
       case "setup":
@@ -405,8 +532,23 @@ export function HowItWorks() {
         </div>
 
         {/* Content */}
-        <div className="bg-card rounded-2xl border border-border p-6 md:p-8 min-h-[300px]">
-          {renderContent()}
+        <div className="bg-card rounded-2xl border border-border p-6 md:p-8">
+          <div className={cn("grid gap-10 items-start", gridColsClass)}>
+            <div className="">{renderContent()}</div>
+            {showMascot ? (
+              <div className="hidden md:flex justify-center md:justify-end">
+                <div className="relative">
+                  <div className="absolute -inset-6 rounded-[28px] bg-gradient-to-br from-primary/10 via-transparent to-accent/10 blur-2xl" />
+                  <Mascot
+                    src={mascotSrc}
+                    decorative
+                    sizes={mascotSizes}
+                    className={cn("relative h-auto rotate-[1deg]", mascotWidthClass)}
+                  />
+                </div>
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
     </section>

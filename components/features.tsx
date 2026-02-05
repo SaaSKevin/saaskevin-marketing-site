@@ -1,50 +1,60 @@
 import { Globe, Shield, Zap, Code, Palette, BarChart3 } from "lucide-react"
+import { Mascot } from "@/components/mascot"
+import { MASCOTS } from "@/components/mascots"
 
 const features = [
   {
     icon: Globe,
     title: "Pre-built Widget",
-    description: "Paste one JavaScript snippet. Your users can add and manage custom domains without ever leaving your app.",
+    description: "Paste a snippet. Your users add, verify, and manage custom domains without ever leaving your app.",
   },
   {
     icon: Shield,
     title: "Automatic SSL",
-    description: "Every custom domain gets HTTPS automatically. No certificates to manage, no renewals to worry about. Ever.",
+    description: "Every custom domain gets HTTPS automatically. No certificates to manage, no renewals to worry about.",
   },
   {
     icon: Zap,
     title: "We Handle DNS",
-    description: "Your users follow simple instructions. We verify everything and tell them exactly when their domain is ready.",
+    description: "Your users follow simple instructions. We provide an optimized UI to guide them through the process.",
   },
   {
     icon: Code,
-    title: "3 Lines of Code",
-    description: "Read one header to know which customer is visiting. That's your entire backend integration. Seriously.",
+    title: "Read One Header",
+    description: "Route requests with X-SaaSKevin-Customer-ID. This is all you need to know which customer is visiting.",
   },
   {
     icon: Palette,
     title: "Matches Your Brand",
-    description: "Customize colors, fonts, and styling. The widget looks and feels like part of your product.",
+    description: "Customize colors, fonts, styling, and more. The widget looks and feels like part of your product.",
   },
   {
     icon: BarChart3,
     title: "Domain Dashboard",
-    description: "See all your customers' domains in one place. Track usage, status, and troubleshoot issues instantly.",
+    description: "See all your customers' domains and their status in one place. Track usage and troubleshoot issues instantly.",
   },
 ]
 
 const comparisons = [
   { label: "How you add it", competitors: "Complex backend APIs", saaskevin: "Paste a widget" },
-  { label: "Code you write", competitors: "~100+ lines", saaskevin: "3 lines" },
-  { label: "User interface", competitors: "Build it yourself", saaskevin: "Ready to use" },
-  { label: "DNS headaches", competitors: "You figure it out", saaskevin: "We handle it" },
-  { label: "SSL certificates", competitors: "Your problem", saaskevin: "Automatic" },
+  { label: "Code you write", competitors: "~100+ lines", saaskevin: "Read one header" },
+  { label: "User interface", competitors: "Build it yourself", saaskevin: "Ready-to-use UI" },
+  { label: "DNS setup", competitors: "You figure out the UX", saaskevin: "We handle it" },
+  { label: "SSL certificates", competitors: "Your problem", saaskevin: "We handle it" },
 ]
 
 export function Features() {
   return (
     <section id="features" className="py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6 relative">
+        <div className="absolute -top-10 right-0 hidden md:block">
+          <Mascot
+            src={MASCOTS.guidingTraffic}
+            decorative
+            sizes="160px"
+            className="w-40 h-auto rotate-[2deg] opacity-95"
+          />
+        </div>
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Features</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
