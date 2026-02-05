@@ -469,12 +469,12 @@ export function ProductDemo() {
     <section id="demo" className="py-20 md:py-28 bg-secondary/30">
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative text-center mb-12">
-          <div className="absolute -top-10 right-0 hidden md:block">
+          <div className="flex justify-center mb-8 md:mb-0 md:absolute md:-top-10 md:right-0">
             <Mascot
               src={demoMascot}
               decorative
               sizes="160px"
-              className="w-40 h-auto rotate-[-3deg] opacity-95"
+              className="w-28 sm:w-32 md:w-40 h-auto rotate-[-3deg] opacity-95"
             />
           </div>
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">See It In Action</p>
