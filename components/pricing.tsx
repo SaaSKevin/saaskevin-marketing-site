@@ -70,12 +70,12 @@ export function Pricing() {
 
           <div className="bg-card rounded-2xl border border-primary/30 p-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-xl">
-              Pay as you grow
+              Free tier included
             </div>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h3 className="text-xl font-semibold text-foreground">Business</h3>
-                <p className="text-sm text-muted-foreground mt-1">Perfect for businesses</p>
+                <h3 className="text-xl font-semibold text-foreground">Pay-as-you-go</h3>
+                <p className="text-sm text-muted-foreground mt-1">Usage-based pricing after free tier</p>
               </div>
               <div className="text-right">
                 <div className="text-3xl font-bold text-foreground">$0.09</div>
@@ -92,13 +92,13 @@ export function Pricing() {
                 <p className="text-xs text-muted-foreground">per domain after first 100</p>
               </div> */}
 
-              <div className="rounded-xl bg-secondary/50 border border-border p-4">
+              {/* <div className="rounded-xl bg-secondary/50 border border-border p-4">
                 <div className="flex justify-between items-baseline mb-1">
                   <span className="font-medium text-foreground">Requests</span>
                   <span className="font-bold text-foreground">$0.40<span className="text-muted-foreground text-xs font-normal">/million</span></span>
                 </div>
                 <p className="text-xs text-muted-foreground">per 1M requests after first 1M</p>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-3 text-sm text-muted-foreground">
@@ -110,13 +110,17 @@ export function Pricing() {
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
                 <span>Billing only starts after first 100 domains</span>
               </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
+                <span>Requests billed at $0.40/million after first 1 million</span>
+              </div>
               {/* <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
                 <span>Volume discounts available</span>
               </div> */}
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Priority support</span>
+                <span>Email support</span>
               </div>
             </div>
 
