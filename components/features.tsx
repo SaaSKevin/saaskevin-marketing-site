@@ -47,12 +47,12 @@ export function Features() {
   return (
     <section id="features" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 relative">
-        <div className="absolute -top-10 right-0 hidden md:block">
+        <div className="flex justify-center mb-8 md:mb-0 md:absolute md:-top-10 md:right-0">
           <Mascot
             src={MASCOTS.guidingTraffic}
             decorative
             sizes="160px"
-            className="w-40 h-auto rotate-[2deg] opacity-95"
+            className="w-28 sm:w-32 md:w-40 h-auto rotate-[2deg] opacity-95"
           />
         </div>
         <div className="text-center mb-16">

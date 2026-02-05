@@ -225,7 +225,7 @@ function WidgetContent() {
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
-          <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto">
+          <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre sm:break-normal">
             <code>{code}</code>
           </pre>
         </div>
@@ -379,7 +379,7 @@ serveCustomerContent(customerId, hostname)`
             {copied ? "Copied!" : "Copy"}
           </button>
         </div>
-        <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto">
+        <pre className="p-4 text-sm font-mono text-white/80 overflow-x-auto whitespace-pre-wrap break-words sm:whitespace-pre sm:break-normal">
           <code>{code}</code>
         </pre>
       </div>
@@ -394,9 +394,9 @@ serveCustomerContent(customerId, hostname)`
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
-          <div className="flex items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
+          <div className="flex flex-wrap items-center gap-2 bg-card rounded-lg px-3 py-2 border border-border">
             <span className="text-muted-foreground">We add</span>
-            <span className="font-mono text-primary">x-saaskevin-customer-id: cust_123</span>
+            <span className="font-mono text-primary break-all sm:break-normal">x-saaskevin-customer-id: cust_123</span>
           </div>
           <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:block" />
           <span className="text-muted-foreground md:hidden">↓</span>
@@ -480,7 +480,8 @@ export function HowItWorks() {
     : "md:grid-cols-1"
 
   const mascotSizes = activeTab === "verify" ? "180px" : "220px"
-  const mascotWidthClass = activeTab === "verify" ? "w-[180px]" : "w-56"
+  const mascotWidthClass =
+    activeTab === "verify" ? "w-36 sm:w-[180px]" : "w-40 sm:w-48 md:w-56"
 
   const renderContent = () => {
     switch (activeTab) {
@@ -536,7 +537,7 @@ export function HowItWorks() {
           <div className={cn("grid gap-10 items-start", gridColsClass)}>
             <div className="">{renderContent()}</div>
             {showMascot ? (
-              <div className="hidden md:flex justify-center md:justify-end">
+              <div className="flex justify-center md:justify-end mt-8 md:mt-0">
                 <div className="relative">
                   <div className="absolute -inset-6 rounded-[28px] bg-gradient-to-br from-primary/10 via-transparent to-accent/10 blur-2xl" />
                   <Mascot

@@ -15,15 +15,6 @@ export function CTA() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
 
-          <div className="absolute bottom-0 right-0 hidden md:block translate-y-8 translate-x-6">
-            <Mascot
-              src={MASCOTS.waveHello}
-              decorative
-              sizes="176px"
-              className="w-44 h-auto rotate-[-2deg] opacity-90"
-            />
-          </div>
-
           <div className="relative px-6 py-16 md:px-12 md:py-20">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
@@ -63,6 +54,14 @@ export function CTA() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center mt-10 md:mt-0 md:absolute md:bottom-0 md:right-0 md:translate-y-8 md:translate-x-6">
+            <Mascot
+              src={MASCOTS.waveHello}
+              decorative
+              sizes="176px"
+              className="w-32 sm:w-40 md:w-44 h-auto rotate-[-2deg] opacity-90"
+            />
           </div>
         </div>
       </div>
