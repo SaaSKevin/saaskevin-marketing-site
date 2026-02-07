@@ -61,7 +61,7 @@ export function Features() {
             Your users are asking for custom domains. SaaSKevin removes all the headaches.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Custom domains shouldn't be complicated. We take care of everything so you can focus on your product.
+            Custom domains shouldn’t be complicated. We take care of everything so you can focus on your product.
           </p>
         </div>
 

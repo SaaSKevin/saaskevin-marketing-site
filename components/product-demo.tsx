@@ -3,7 +3,7 @@
 import React from "react"
 
 import { useState, useEffect } from "react"
-import { Users, Settings, Shield, Check, Loader2, Globe, AlertCircle, Copy, ExternalLink } from "lucide-react"
+import { Users, Settings, Shield, Check, Loader2, Globe, Copy, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
@@ -448,16 +448,6 @@ function AdminDemo() {
         }
       `}</style>
     </div>
-  )
-}
-
-function BarChart(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <line x1="12" x2="12" y1="20" y2="10" />
-      <line x1="18" x2="18" y1="20" y2="4" />
-      <line x1="6" x2="6" y1="20" y2="16" />
-    </svg>
   )
 }
 

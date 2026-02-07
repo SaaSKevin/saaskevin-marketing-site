@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Settings, Code2, Shield, Rocket, Check, Copy, Globe, ArrowRight } from "lucide-react"
+import { Settings, Code2, Shield, Rocket, Check, Copy, ArrowRight } from "lucide-react"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
 import { cn } from "@/lib/utils"
@@ -416,7 +416,7 @@ function DoneContent() {
       <div>
         <h3 className="text-lg font-semibold text-foreground mb-2">Your users can now add custom domains</h3>
         <p className="text-muted-foreground">
-          That's the entire integration. From now on, we handle all the complexity.
+          That’s the entire integration. From now on, we handle all the complexity.
         </p>
       </div>
 

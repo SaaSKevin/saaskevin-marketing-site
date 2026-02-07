@@ -2,8 +2,6 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Mascot } from "@/components/mascot"
-import { MASCOTS } from "@/components/mascots"
 import { ArrowRight, Sparkles, Globe, Check, X } from "lucide-react"
 
 export interface HeroProps {
