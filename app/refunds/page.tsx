@@ -1,5 +1,4 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { SiteShell } from "@/components/site-shell"
 import Link from "next/link"
 
 export const metadata = {
@@ -9,9 +8,7 @@ export const metadata = {
 
 export default function RefundsPage() {
   return (
-    <main className="min-h-screen bg-background">
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-40" />
-      <Header />
+    <SiteShell>
       <div className="pt-28 pb-20">
         <div className="mx-auto max-w-3xl px-6">
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
@@ -159,7 +156,6 @@ export default function RefundsPage() {
           </div>
         </div>
       </div>
-      <Footer />
-    </main>
+    </SiteShell>
   )
 }

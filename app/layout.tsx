@@ -11,6 +11,7 @@ const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono'
 export const metadata: Metadata = {
   title: 'SaaSKevin - Custom Domains for Your SaaS, Minimal Code Required',
   description: 'Give your users custom domains with only 3 lines of code. SaaSKevin lets you embed white-label domain functionality in minutes.',
+  metadataBase: new URL('https://saaskevin.com'),
   generator: 'SaaSKevin',
   icons: {
     icon: [
@@ -28,6 +29,16 @@ export const metadata: Metadata = {
       },
     ],
     apple: '/apple-icon.png',
+  },
+  openGraph: {
+    siteName: 'SaaSKevin',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/logo.png' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/logo.png'],
   },
 }
 
