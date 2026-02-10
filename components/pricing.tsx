@@ -108,11 +108,11 @@ export function Pricing() {
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Billing only starts after first 100 domains</span>
+                <span>Billing only starts after first 100 free domains</span>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Requests billed at $0.40/million after first 1 million</span>
+                <span>Requests billed at $0.40/million after first 1 million free requests</span>
               </div>
               {/* <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
