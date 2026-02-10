@@ -4,7 +4,7 @@ import { CTA } from "@/components/cta"
 
 export const metadata = {
   title: "Pricing - SaaSKevin",
-  description: "Simple, usage-based pricing for your SaaS. Start for free, scale indefinitely.",
+  description: "Simple, domain-based pricing for your SaaS. Start for free, scale with domains.",
 }
 
 export default function PricingPage() {

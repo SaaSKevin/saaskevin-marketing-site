@@ -43,7 +43,11 @@ export function BlogPostCard({ post, className }: BlogPostCardProps) {
       )}
     >
       {coverSrc ? (
-        <div className="relative border-b border-border bg-muted/20">
+        <Link
+          href={`/blog/${post.slug}`}
+          className="block border-b border-border bg-muted/20 focus:outline-none focus:ring-2 focus:ring-ring/60 focus:ring-inset"
+          aria-label={`Read: ${post.title}`}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={coverSrc}
@@ -52,7 +56,7 @@ export function BlogPostCard({ post, className }: BlogPostCardProps) {
             loading="lazy"
             decoding="async"
           />
-        </div>
+        </Link>
       ) : null}
 
       <Link

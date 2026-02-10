@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const metadata = {
   title: "Refund Policy - SaaSKevin",
-  description: "Learn about SaaSKevin's refund policy for subscription and usage-based billing.",
+  description: "Learn about SaaSKevin's refund policy for subscription billing.",
 }
 
 export default function RefundsPage() {
@@ -22,21 +22,20 @@ export default function RefundsPage() {
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                SaaSKevin offers a usage-based pricing model with a generous free tier, allowing you to evaluate our service before incurring any charges. We believe in transparency and fairness, and this policy outlines how refunds are handled for our subscription and usage-based billing.
+                SaaSKevin offers a simple, domain-based pricing model with a generous free tier, allowing you to evaluate our service before incurring any charges. We believe in transparency and fairness, and this policy outlines how refunds are handled for subscription billing.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our pricing includes <strong className="text-foreground">100 free domains</strong> and <strong className="text-foreground">1 million free requests per month</strong>. You only pay for usage beyond these thresholds, which means you can thoroughly test our service at no cost.
+                Our pricing includes <strong className="text-foreground">100 free domains</strong>. Traffic is included under a <strong className="text-foreground">fair-use policy</strong>.
               </p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Subscription Billing</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                SaaSKevin subscriptions are billed monthly in advance for domain-based charges and in arrears for usage-based charges (requests). Here&apos;s how our billing works:
+                SaaSKevin subscriptions are billed monthly in advance for domain-based charges. Here&apos;s how our billing works:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">Domain charges:</strong> Billed monthly based on the number of active domains beyond the free tier (100 domains)</li>
-                <li><strong className="text-foreground">Request charges:</strong> Billed monthly based on actual usage beyond the free tier (1 million requests)</li>
                 <li><strong className="text-foreground">Billing cycle:</strong> Charges are processed automatically via Stripe on your monthly billing date</li>
               </ul>
             </section>
@@ -48,7 +47,6 @@ export default function RefundsPage() {
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">Subscription fees</strong> are generally non-refundable once charged</li>
-                <li><strong className="text-foreground">Usage-based fees</strong> reflect actual consumption and are non-refundable</li>
                 <li><strong className="text-foreground">Partial month usage</strong> is not pro-rated upon cancellation</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">

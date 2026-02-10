@@ -102,11 +102,11 @@ export default function TermsPage() {
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">Pricing:</strong> Fees are based on your selected plan and usage, as displayed on our pricing page</li>
                 <li><strong className="text-foreground">Billing:</strong> Subscriptions are billed in advance on a monthly or annual basis</li>
-                <li><strong className="text-foreground">Usage-based charges:</strong> Overage fees are billed monthly in arrears</li>
                 <li><strong className="text-foreground">Payment method:</strong> We accept major credit cards via Stripe</li>
                 <li><strong className="text-foreground">Taxes:</strong> Prices exclude applicable taxes, which will be added where required</li>
                 <li><strong className="text-foreground">Failed payments:</strong> We may suspend Service access after failed payment attempts</li>
                 <li><strong className="text-foreground">Refunds:</strong> Fees are non-refundable except as required by law or stated in our refund policy</li>
+                <li><strong className="text-foreground">Fair use:</strong> Traffic is included under a fair-use policy. We may request an upgrade or temporarily pause domains in cases of abuse or sustained unusually high traffic.</li>
               </ul>
             </section>
 
