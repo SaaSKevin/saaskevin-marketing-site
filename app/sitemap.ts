@@ -6,6 +6,10 @@ import {
   getAllAuthors,
   getAllCategories,
 } from "@/lib/blog"
+import {
+  getAllUseCases,
+  getAllIndustries,
+} from "@/lib/use-cases"
 
 const SITE_URL = "https://saaskevin.com"
 
@@ -13,6 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/pricing`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/use-cases`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/powered-by`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
@@ -20,10 +25,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/refunds`, changeFrequency: "yearly", priority: 0.2 },
   ]
 
-  const [posts, categories, authors] = await Promise.all([
+  const [posts, categories, authors, useCases, industries] = await Promise.all([
     getAllBlogPosts(),
     getAllCategories(),
     getAllAuthors(),
+    getAllUseCases(),
+    getAllIndustries(),
   ])
 
   const visiblePosts = posts.filter((p) => !p.draft)
@@ -77,8 +84,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   })
 
+  // Use-case routes
+  const visibleUseCases = useCases.filter((u) => !u.draft)
+
+  const useCaseRoutes: MetadataRoute.Sitemap = visibleUseCases.map((u) => ({
+    url: u.url,
+    lastModified: u.updated ?? u.date,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }))
+
+  const industryRoutes: MetadataRoute.Sitemap = industries.map((i) => ({
+    url: `${SITE_URL}/use-cases/industry/${i.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }))
+
   return [
     ...staticRoutes,
+    ...useCaseRoutes,
+    ...industryRoutes,
     ...postRoutes,
     ...blogPageRoutes,
     ...categoryRoutes,

@@ -29,6 +29,9 @@ export function Header() {
           <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </Link>
+          <Link href="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Use Cases
+          </Link>
           <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Blog
           </Link>
@@ -79,6 +82,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              href="/use-cases"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Use Cases
             </Link>
             <Link
               href="/blog"
