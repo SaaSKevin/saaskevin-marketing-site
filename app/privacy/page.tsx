@@ -93,7 +93,7 @@ export default function PrivacyPage() {
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">Service providers:</strong> Third parties that help us operate our service (cloud infrastructure, payment processing, analytics)</li>
                 <li><strong className="text-foreground">Certificate authorities:</strong> To issue and manage TLS certificates for your domains</li>
-                <li><strong className="text-foreground">DNS providers:</strong> For domain verification and ACME challenge delegation</li>
+                <li><strong className="text-foreground">DNS providers:</strong> For domain verification</li>
                 <li><strong className="text-foreground">Legal requirements:</strong> When required by law or to protect our rights</li>
                 <li><strong className="text-foreground">Business transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
               </ul>

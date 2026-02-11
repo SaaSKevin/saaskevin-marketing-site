@@ -11,7 +11,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <Image src="/icon.svg" alt="SaaSKevin Logo" width={32} height={32} className="rounded-lg" />
@@ -19,39 +19,39 @@ export function Header() {
           </div>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
-          <Link href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <div className="hidden lg:flex items-center gap-5 xl:gap-8">
+          <Link href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             How It Works
           </Link>
-          <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Features
           </Link>
-          <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Pricing
           </Link>
-          <Link href="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Use Cases
           </Link>
-          <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Blog
           </Link>
-          <Link href="/#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             See It Live
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="text-muted-foreground" asChild>
+        <div className="hidden lg:flex items-center gap-2 xl:gap-3">
+          <Button variant="ghost" size="sm" className="text-muted-foreground whitespace-nowrap" asChild>
             <Link href="https://app.saaskevin.com/auth/login">Log In</Link>
           </Button>
-          <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground" asChild>
+          <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground whitespace-nowrap" asChild>
             <Link href="https://app.saaskevin.com/auth/join">Get Started</Link>
           </Button>
         </div>
 
         <button
           type="button"
-          className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+          className="lg:hidden p-2 text-muted-foreground hover:text-foreground"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -60,7 +60,7 @@ export function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md">
+        <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
             <Link
               href="/#how-it-works"
