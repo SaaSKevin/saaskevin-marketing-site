@@ -49,6 +49,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Counter.dev analytics */}
+        <Script
+          src="https://cdn.counter.dev/script.js"
+          data-id="d72d4516-721c-460c-b025-7c8a913cd19e"
+          data-utcoffset="8"
+          strategy="beforeInteractive"
+        />
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QYG9CZRQ96"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QYG9CZRQ96');
+            `,
+          }}
+        />
+        {/* InstantPage */}
+        <Script
+          src="//instant.page/5.1.0"
+          type="module"
+          integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
