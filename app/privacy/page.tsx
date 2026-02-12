@@ -2,8 +2,11 @@ import { SiteShell } from "@/components/site-shell"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Privacy Policy - SaaSKevin",
-  description: "Learn how SaaSKevin collects, uses, and protects your personal information.",
+  title: "Privacy Policy",
+  description: "Learn how SaaSKevin collects, uses, and protects your personal information when using our custom domain service.",
+  alternates: {
+    canonical: "/privacy",
+  },
 }
 
 export default function PrivacyPage() {

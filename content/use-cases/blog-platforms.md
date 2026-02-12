@@ -51,7 +51,7 @@ Writers connect their domain to your platform. Your blogging platform serves art
 
 RSS feeds, social meta tags, and sitemap.xml all reference the writer's custom domain. To readers and search engines, it looks like an independent site.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Independent journalists** - Professional reporting at personal domain
 - **Technical bloggers** - Dev blogs at personal domains
@@ -67,4 +67,4 @@ RSS feeds, social meta tags, and sitemap.xml all reference the writer's custom d
 
 Give writers the publishing platform they deserve—one that respects their need to own their domain and their audience.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

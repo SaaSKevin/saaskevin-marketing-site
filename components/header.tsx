@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { MARKETING_URLS, SIGNUP_CTA_TEXT } from "@/lib/marketing-constants"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -23,29 +24,32 @@ export function Header() {
           <Link href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             How It Works
           </Link>
-          <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
+          {/* <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Features
-          </Link>
+          </Link> */}
           <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Pricing
-          </Link>
-          <Link href="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
-            Use Cases
-          </Link>
-          <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
-            Blog
           </Link>
           <Link href="/#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             See It Live
           </Link>
+          <Link href="/industries" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
+            Industries
+          </Link>
+          <Link href="/tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
+            Free Tools
+          </Link>
+          {/* <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
+            Blog
+          </Link> */}
         </div>
 
         <div className="hidden lg:flex items-center gap-2 xl:gap-3">
           <Button variant="ghost" size="sm" className="text-muted-foreground whitespace-nowrap" asChild>
-            <Link href="https://app.saaskevin.com/auth/login">Log In</Link>
+            <Link href={MARKETING_URLS.auth.login}>Log In</Link>
           </Button>
           <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground whitespace-nowrap" asChild>
-            <Link href="https://app.saaskevin.com/auth/join">Get Started</Link>
+            <Link href={MARKETING_URLS.auth.join}>{SIGNUP_CTA_TEXT}</Link>
           </Button>
         </div>
 
@@ -69,13 +73,13 @@ export function Header() {
             >
               How It Works
             </Link>
-            <Link
+            {/* <Link
               href="/#features"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
-            </Link>
+            </Link> */}
             <Link
               href="/pricing"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
@@ -84,32 +88,32 @@ export function Header() {
               Pricing
             </Link>
             <Link
-              href="/use-cases"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Use Cases
-            </Link>
-            <Link
-              href="/blog"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link
               href="/#demo"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               See It Live
             </Link>
+            <Link
+              href="/industries"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Industries
+            </Link>
+            <Link
+              href="/tools"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Free Tools
+            </Link>
             <div className="flex flex-col gap-2 pt-2 border-t border-border">
               <Button variant="ghost" size="sm" className="justify-start text-muted-foreground" asChild>
-                <Link href="https://app.saaskevin.com/auth/login" onClick={() => setMobileMenuOpen(false)}>Log In</Link>
+                <Link href={MARKETING_URLS.auth.login} onClick={() => setMobileMenuOpen(false)}>Log In</Link>
               </Button>
               <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href="https://app.saaskevin.com/auth/join" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
+                <Link href={MARKETING_URLS.auth.join} onClick={() => setMobileMenuOpen(false)}>{SIGNUP_CTA_TEXT}</Link>
               </Button>
             </div>
           </div>

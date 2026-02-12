@@ -53,7 +53,7 @@ Newsletter writers bring a domain or buy one. They add DNS records following our
 
 For email sending, the writer verifies domain ownership with SPF/DKIM records. SaaSKevin guides them through the entire process with copy-paste instructions.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Independent journalists** - Professional newsletter at their personal domain
 - **Industry experts** - B2B newsletter at company domain
@@ -69,4 +69,4 @@ For email sending, the writer verifies domain ownership with SPF/DKIM records. S
 
 Position your platform as the Substack alternative that respects writers' independence. Custom domains are the feature that wins professional newsletter creators.
 
-[Start offering custom domains](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

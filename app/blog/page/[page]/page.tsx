@@ -32,13 +32,13 @@ export async function generateMetadata({ params }: PageProps) {
   const pageNumber = parsePageParam(page)
 
   if (!pageNumber || pageNumber < 2) {
-    return { title: "Blog - SaaSKevin" }
+    return { title: "Blog" }
   }
 
   return {
-    title: `Blog (Page ${pageNumber}) - SaaSKevin`,
+    title: `Blog (Page ${pageNumber})`,
     description:
-      "Notes, decisions, and implementation details from building custom domains for SaaS products.",
+      "Practical posts on DNS verification, SSL certificates, reverse proxy routing, and building custom domain infrastructure for SaaS products.",
     alternates: {
       canonical: `/blog/page/${pageNumber}`,
     },

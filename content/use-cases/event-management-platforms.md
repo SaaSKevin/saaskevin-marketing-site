@@ -51,7 +51,7 @@ Event organizers connect a domain (or subdomain) to their event. SaaSKevin handl
 
 Registration forms, ticket purchases, and email confirmations all reference the custom domain. To attendees, it looks like a standalone event website.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Conferences** - Annual tech conferences at dedicated domains
 - **Corporate events** - Company offsites and internal events
@@ -67,4 +67,4 @@ Registration forms, ticket purchases, and email confirmations all reference the 
 
 Help event organizers present professional, branded experiences. Custom domains make every event look like a standalone production.
 
-[Start adding custom domains](https://app.saaskevin.com/auth/join) - Setup takes 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

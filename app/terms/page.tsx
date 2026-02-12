@@ -2,8 +2,11 @@ import { SiteShell } from "@/components/site-shell"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Terms of Service - SaaSKevin",
-  description: "Read the terms and conditions governing your use of SaaSKevin's custom domain services.",
+  title: "Terms of Service",
+  description: "Read the terms and conditions for using SaaSKevin's custom domain infrastructure for SaaS platforms.",
+  alternates: {
+    canonical: "/terms",
+  },
 }
 
 export default function TermsPage() {

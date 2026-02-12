@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: PageProps) {
   const categories = await getAllCategories()
   const category = categories.find((c) => c.slug === slug)
 
-  if (!category) return { title: "Category not found - SaaSKevin" }
+  if (!category) return { title: "Category not found" }
 
   return {
-    title: `${category.name} - Blog - SaaSKevin`,
-    description: `${category.count} post${category.count === 1 ? "" : "s"} in ${category.name}.`,
+    title: `${category.name} - Blog`,
+    description: `${category.count} post${category.count === 1 ? "" : "s"} about ${category.name}. Practical engineering guides for SaaS custom domain infrastructure.`,
     alternates: {
       canonical: `/blog/category/${slug}`,
     },

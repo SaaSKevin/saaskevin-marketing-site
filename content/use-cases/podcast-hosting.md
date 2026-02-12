@@ -51,7 +51,7 @@ Podcasters connect their domain to your platform. Your hosting platform serves s
 
 RSS feeds point to the custom domain. Podcast players and directories reference the custom domain. Everything feels like an independent podcast brand.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Independent podcasts** - Solo shows with professional branding
 - **Business podcasts** - Company podcasts at company domain
@@ -67,4 +67,4 @@ RSS feeds point to the custom domain. Podcast players and directories reference 
 
 Help podcasters build professional brands with custom domain podcast hosting. Make your platform invisible while powering their show.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

@@ -3,15 +3,19 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
+import { MARKETING_URLS } from '@/lib/marketing-constants'
 import './globals.css'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'SaaSKevin - Custom Domains for Your SaaS, Minimal Code Required',
-  description: 'Give your users custom domains with only 3 lines of code. SaaSKevin lets you embed white-label domain functionality in minutes.',
-  metadataBase: new URL('https://saaskevin.com'),
+  title: {
+    default: 'SaaSKevin - Custom Domains for Your SaaS Platform',
+    template: '%s | SaaSKevin',
+  },
+  description: 'Add custom domains to your SaaS in 5 minutes. SaaSKevin handles DNS verification, SSL certificates, and request routing so your users get white-label branded domains.',
+  metadataBase: new URL(MARKETING_URLS.site),
   generator: 'SaaSKevin',
   icons: {
     icon: [

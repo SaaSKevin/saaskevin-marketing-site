@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next"
+import { MARKETING_URLS } from "@/lib/marketing-constants"
 
-const SITE_URL = "https://saaskevin.com"
+const SITE_URL = MARKETING_URLS.site
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: "/api/",
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

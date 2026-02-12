@@ -55,7 +55,7 @@ Your users bring a domain they own (or buy one through your partner links). They
 
 Your application reads `X-SaaSKevin-Customer-Id` to determine which user's portfolio to display. Three lines of code.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Freelance designers** - Client-facing portfolio at their personal domain
 - **Photographers** - Wedding photography business on company domain
@@ -71,4 +71,4 @@ Your application reads `X-SaaSKevin-Customer-Id` to determine which user's portf
 
 Stop losing professional users to platforms that support custom domains. Add SaaSKevin in 5 minutes and start converting creatives who need **theirname.com**, not **yourplatform.com/username**.
 
-[Start your free trial](https://app.saaskevin.com/auth/join) - First 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

@@ -15,7 +15,9 @@ export const MASCOTS = {
   confused: "/mascots/Make_it_confused_but_variation.png",
   zenFade: "/mascots/Make_it_fading_into__variation.png",
   pricingMascot: "/mascots/Make_it_lounging_com_variation.png",
-  cloudflareSignin: '/mascots/Make_the_cat_hugging_variation.png'
+  freeToolsMascot: "/mascots/Make_the_cat_with_a__variation.png",
+  industriesMascot: "/mascots/Adobe Express - file.png",
+  cloudflareSignin: "/mascots/Make_the_cat_hugging_variation.png",
 } as const
 
 export type MascotName = keyof typeof MASCOTS

@@ -5,6 +5,11 @@ import { ArrowRight, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import {
+  MARKETING_URLS,
+  PRICING_COPY,
+  SIGNUP_CTA_TEXT,
+} from "@/lib/marketing-constants"
 
 type SidebarCtaProps = {
   className?: string
@@ -14,7 +19,7 @@ export function SidebarCta({ className }: SidebarCtaProps) {
   return (
     <aside
       className={cn(" shrink-0", className)}
-      aria-label="Try SaaSKevin"
+      aria-label={`${SIGNUP_CTA_TEXT} CTA`}
     >
       <Card className="sticky top-24 gap-2 border-border bg-card shadow-sm">
         <CardHeader className="pb-0">
@@ -32,15 +37,15 @@ export function SidebarCta({ className }: SidebarCtaProps) {
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Add custom domains to your SaaS in 5 minutes. 100 domains free.
+            Add custom domains to your SaaS in 5 minutes. {PRICING_COPY.freeDomainsFree}.
           </p>
           <Button
             size="sm"
             className="w-full bg-primary hover:bg-accent text-primary-foreground"
             asChild
           >
-            <Link href="https://app.saaskevin.com/auth/join">
-              Get Started
+            <Link href={MARKETING_URLS.auth.join}>
+              {SIGNUP_CTA_TEXT}
               <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
             </Link>
           </Button>

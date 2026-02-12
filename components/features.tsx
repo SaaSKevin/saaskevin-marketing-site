@@ -1,6 +1,7 @@
 import { Globe, Shield, Zap, Code, Palette, BarChart3 } from "lucide-react"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
+import { PRICING_COPY, PRICING_OFFER } from "@/lib/marketing-constants"
 
 const features = [
   {
@@ -107,8 +108,10 @@ export function Features() {
             <div className="text-sm text-muted-foreground">Of backend code needed</div>
           </div>
           <div className="bg-card rounded-xl border border-border p-6 text-center">
-            <div className="text-4xl font-bold text-primary mb-1">$0.09</div>
-            <div className="text-sm text-muted-foreground">Per domain/month (after first 100)</div>
+            <div className="text-4xl font-bold text-primary mb-1">{PRICING_COPY.pricePerDomain}</div>
+            <div className="text-sm text-muted-foreground">
+              Per domain/month (after first {PRICING_OFFER.freeDomains})
+            </div>
           </div>
         </div>
       </div>

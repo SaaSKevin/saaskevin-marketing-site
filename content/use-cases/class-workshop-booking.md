@@ -51,7 +51,7 @@ Studios connect their domain or subdomain to your platform. SaaSKevin handles DN
 
 Students browse classes, book spots, and receive confirmations—all branded as coming from the studio, not your platform.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Yoga studios** - Class schedules and booking at studio domain
 - **Fitness studios** - CrossFit, Pilates, barre studios with custom domains
@@ -67,4 +67,4 @@ Students browse classes, book spots, and receive confirmations—all branded as 
 
 Help studios and instructors present a professional, branded booking experience. Custom domains make your platform invisible while powering their business.
 
-[Start adding custom domains](https://app.saaskevin.com/auth/join) - Setup takes 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

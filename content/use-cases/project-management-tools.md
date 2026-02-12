@@ -51,7 +51,7 @@ Agencies or companies connect domains or subdomains to workspaces. Each client o
 
 Clients collaborate on tasks, view timelines, and receive notifications—all at the agency's custom domain. Your platform powers it invisibly.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Digital agencies** - Client project workspaces at agency domain
 - **Development shops** - Client sprints and deliverable tracking
@@ -67,4 +67,4 @@ Clients collaborate on tasks, view timelines, and receive notifications—all at
 
 Give agencies the white-label project management they need to serve enterprise clients. Custom domains make your platform invisible infrastructure.
 
-[Add custom domains now](https://app.saaskevin.com/auth/join) - Setup takes 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

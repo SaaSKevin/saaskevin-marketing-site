@@ -9,6 +9,7 @@ import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
 import Link from "next/link"
 import Image from "next/image"
+import { MARKETING_URLS, SIGNUP_CTA_TEXT } from "@/lib/marketing-constants"
 
 function EndUserDemo() {
   const [step, setStep] = useState(0)
@@ -484,7 +485,7 @@ export function ProductDemo() {
 
         <div className="mt-10 text-center">
           <Button className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-            <Link href="https://app.saaskevin.com/auth/join">Get Started</Link>
+            <Link href={MARKETING_URLS.auth.join}>{SIGNUP_CTA_TEXT}</Link>
           </Button>
         </div>
       </div>

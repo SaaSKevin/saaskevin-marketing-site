@@ -54,7 +54,7 @@ SaaSKevin lets you offer custom storefront domains without the engineering compl
 
 Your checkout flow doesn't change. Your payment processing stays the same. The only difference is the domain name in the browser.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Course creators** - Sell courses at their own domain
 - **Template sellers** - Design templates, Notion templates, spreadsheet templates
@@ -72,4 +72,4 @@ Most platforms charge creators $10-20/month for custom domain access and pocket 
 
 Give your creators the professional storefront they need. Custom domains boost trust, increase conversions, and reduce platform risk.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - 5 minute setup, 100 free domains.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

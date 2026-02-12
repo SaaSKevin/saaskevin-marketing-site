@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { CTA } from "@/components/cta"
 import { getAllBlogSlugs, getBlogPostBySlug } from "@/lib/blog"
 import { slugify } from "@/lib/utils"
+import { MARKETING_URLS } from "@/lib/marketing-constants"
 
 export const dynamicParams = false
 
@@ -19,7 +20,7 @@ type PageProps = {
   }>
 }
 
-const SITE_URL = "https://saaskevin.com"
+const SITE_URL = MARKETING_URLS.site
 
 const formatDate = (value: string) =>
   new Intl.DateTimeFormat("en-US", {
@@ -56,12 +57,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!post) {
     return {
-      title: "Post not found - SaaSKevin",
+      title: "Post not found",
       robots: { index: false, follow: false },
     }
   }
 
-  const title = `${post.title} - SaaSKevin`
+  const title = post.title
+  const ogTitle = `${post.title} | SaaSKevin`
   const coverImage = post.image ? resolveBlogAssetSrc(post.slug, post.image) : null
   const image = coverImage ?? "/logo.png"
 
@@ -75,7 +77,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       type: "article",
       url: post.url,
-      title,
+      title: ogTitle,
       description: post.description,
       siteName: "SaaSKevin",
       publishedTime: post.date,
@@ -84,7 +86,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: ogTitle,
       description: post.description,
       images: [image],
     },

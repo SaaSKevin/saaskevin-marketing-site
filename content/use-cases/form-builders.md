@@ -51,7 +51,7 @@ Users connect a domain or subdomain to your form builder. When respondents visit
 
 Form submissions, file uploads, and thank-you pages all happen at the custom domain. Your platform processes everything behind the scenes.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Lead generation forms** - Marketing forms at company domain
 - **Customer surveys** - Feedback collection with brand consistency
@@ -67,4 +67,4 @@ Form submissions, file uploads, and thank-you pages all happen at the custom dom
 
 Help businesses collect data professionally with custom domain forms. Higher completion rates and brand consistency start with SaaSKevin.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

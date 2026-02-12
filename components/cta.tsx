@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
 import { CheckCircle2, ArrowRight } from "lucide-react"
+import { MARKETING_URLS, PRICING_COPY, SIGNUP_CTA_TEXT } from "@/lib/marketing-constants"
 
 export function CTA() {
   return (
@@ -32,8 +33,8 @@ export function CTA() {
                   className="h-12 bg-primary hover:bg-accent text-primary-foreground px-8 text-base"
                   asChild
                 >
-                  <Link href="https://app.saaskevin.com/auth/join">
-                    Get Started
+                  <Link href={MARKETING_URLS.auth.join}>
+                    {SIGNUP_CTA_TEXT}
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </Button>
@@ -42,11 +43,11 @@ export function CTA() {
               <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
-                  First 100 domains free
+                  {PRICING_COPY.firstFreeDomains}
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
-                  $0.09/domain after
+                  {PRICING_COPY.pricePerDomainAfter}
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />

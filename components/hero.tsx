@@ -3,6 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Globe, Check, X } from "lucide-react"
+import {
+  MARKETING_URLS,
+  PRICING_COPY,
+  SIGNUP_CTA_TEXT,
+} from "@/lib/marketing-constants"
 
 export interface HeroProps {
   badgeText?: string
@@ -13,15 +18,15 @@ export interface HeroProps {
 }
 
 export function Hero({
-  badgeText = "100 Free Custom Domains", // "For SaaS",
+  badgeText = PRICING_COPY.freeCustomDomainsTitle, // "For SaaS",
   title = (
     <>
       Add <span className="text-primary">Custom Domains to Your SaaS</span> in 5 Minutes
     </>
   ),
   description = "SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.",
-  primaryCtaText = "Get Started",
-  primaryCtaLink = "https://app.saaskevin.com/auth/join"
+  primaryCtaText = SIGNUP_CTA_TEXT,
+  primaryCtaLink = MARKETING_URLS.auth.join,
 }: HeroProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">

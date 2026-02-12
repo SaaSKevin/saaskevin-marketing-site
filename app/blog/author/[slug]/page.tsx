@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: PageProps) {
   const authors = await getAllAuthors()
   const author = authors.find((a) => a.slug === slug)
 
-  if (!author) return { title: "Author not found - SaaSKevin" }
+  if (!author) return { title: "Author not found" }
 
   return {
-    title: `${author.name} - Blog - SaaSKevin`,
-    description: `${author.count} post${author.count === 1 ? "" : "s"} by ${author.name}.`,
+    title: `Posts by ${author.name} - Blog`,
+    description: `${author.count} post${author.count === 1 ? "" : "s"} by ${author.name} on SaaS custom domain infrastructure, DNS, SSL, and more.`,
     alternates: {
       canonical: `/blog/author/${slug}`,
     },

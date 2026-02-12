@@ -53,7 +53,7 @@ Merchants connect a domain they own. SaaSKevin handles DNS verification, SSL pro
 
 Product pages, cart, and checkout all happen at the merchant's domain. To customers, it looks like a standalone e-commerce site. Behind the scenes, your platform powers everything.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Small business shops** - Local businesses selling online at company domain
 - **Direct-to-consumer brands** - Product brands with custom storefronts
@@ -69,4 +69,4 @@ Product pages, cart, and checkout all happen at the merchant's domain. To custom
 
 Give merchants the professional storefront they need to compete. Custom domains aren't optional for e-commerce—they're required.
 
-[Add custom domains now](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

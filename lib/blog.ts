@@ -7,8 +7,9 @@ import matter from "gray-matter"
 import { z } from "zod"
 
 import { slugify } from "@/lib/utils"
+import { MARKETING_URLS } from "@/lib/marketing-constants"
 
-const SITE_URL = "https://saaskevin.com"
+const SITE_URL = MARKETING_URLS.site
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog")
 

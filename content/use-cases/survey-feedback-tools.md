@@ -51,7 +51,7 @@ Companies connect a domain or subdomain to your survey platform. When respondent
 
 Survey questions, progress indicators, and submission confirmations all display at the custom domain. Your platform handles response collection and analysis invisibly.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Customer satisfaction surveys** - NPS and CSAT at company domain
 - **Employee feedback** - Internal surveys at company domain
@@ -67,4 +67,4 @@ Survey questions, progress indicators, and submission confirmations all display 
 
 Help companies collect better feedback with higher response rates. Custom domains build trust and increase participation.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

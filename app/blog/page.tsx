@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button"
 import { getPaginatedBlogPosts } from "@/lib/blog"
 
 export const metadata = {
-  title: "Blog - SaaSKevin",
+  title: "Blog - Custom Domain Engineering & SaaS Infrastructure",
   description:
-    "Notes, decisions, and implementation details from building custom domains for SaaS products.",
+    "Practical posts on DNS verification, SSL certificates, reverse proxy routing, onboarding UX, and building custom domain infrastructure for SaaS products.",
   alternates: {
     canonical: "/blog",
   },

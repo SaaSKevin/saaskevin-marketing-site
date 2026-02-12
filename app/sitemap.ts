@@ -7,17 +7,19 @@ import {
   getAllCategories,
 } from "@/lib/blog"
 import {
-  getAllUseCases,
+  getAllIndustryGuides,
   getAllIndustries,
-} from "@/lib/use-cases"
+} from "@/lib/industries"
+import { TOOLS } from "@/lib/tools"
+import { MARKETING_URLS } from "@/lib/marketing-constants"
 
-const SITE_URL = "https://saaskevin.com"
+const SITE_URL = MARKETING_URLS.site
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/pricing`, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/use-cases`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/industries`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/powered-by`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
@@ -25,11 +27,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/refunds`, changeFrequency: "yearly", priority: 0.2 },
   ]
 
-  const [posts, categories, authors, useCases, industries] = await Promise.all([
+  const [posts, categories, authors, industryGuides, industries] = await Promise.all([
     getAllBlogPosts(),
     getAllCategories(),
     getAllAuthors(),
-    getAllUseCases(),
+    getAllIndustryGuides(),
     getAllIndustries(),
   ])
 
@@ -84,25 +86,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   })
 
-  // Use-case routes
-  const visibleUseCases = useCases.filter((u) => !u.draft)
+  // Industry guide routes
+  const visibleIndustryGuides = industryGuides.filter((guide) => !guide.draft)
 
-  const useCaseRoutes: MetadataRoute.Sitemap = visibleUseCases.map((u) => ({
-    url: u.url,
-    lastModified: u.updated ?? u.date,
+  const industryGuideRoutes: MetadataRoute.Sitemap = visibleIndustryGuides.map((guide) => ({
+    url: guide.url,
+    lastModified: guide.updated ?? guide.date,
     changeFrequency: "monthly",
     priority: 0.8,
   }))
 
   const industryRoutes: MetadataRoute.Sitemap = industries.map((i) => ({
-    url: `${SITE_URL}/use-cases/industry/${i.slug}`,
+    url: `${SITE_URL}/industries/industry/${i.slug}`,
     changeFrequency: "monthly",
     priority: 0.7,
   }))
 
+  const toolRoutes: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/tools`, changeFrequency: "weekly", priority: 0.9 },
+    ...TOOLS.map((tool) => ({
+      url: `${SITE_URL}/tools/${tool.slug}`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+  ]
+
   return [
     ...staticRoutes,
-    ...useCaseRoutes,
+    ...toolRoutes,
+    ...industryGuideRoutes,
     ...industryRoutes,
     ...postRoutes,
     ...blogPageRoutes,

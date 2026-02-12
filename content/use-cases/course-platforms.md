@@ -51,7 +51,7 @@ Course creators connect their domain to your platform. Students access courses, 
 
 Your platform handles video hosting, progress tracking, payment processing, and student management. The instructor's brand stays front and center.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Expert instructors** - Professional educators with premium courses
 - **Corporate training** - Companies hosting internal training at company domain
@@ -67,4 +67,4 @@ Your platform handles video hosting, progress tracking, payment processing, and 
 
 Give course creators the professional platform they need to charge premium prices. Custom domains make your platform invisible while amplifying instructor brands.
 
-[Start adding custom domains](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

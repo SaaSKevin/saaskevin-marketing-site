@@ -51,7 +51,7 @@ Creators connect their domain to your platform. Videos, playlists, and channel p
 
 Embedded video players reference the custom domain. Direct video links use the custom domain. To viewers, it looks like a custom-built video site.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Online courses** - Course videos at course creator's domain
 - **Product demos** - SaaS companies hosting demos at company domain
@@ -67,4 +67,4 @@ Embedded video players reference the custom domain. Direct video links use the c
 
 Give video creators the professional hosting they need with custom domain video platforms. Make your infrastructure invisible.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

@@ -51,7 +51,7 @@ Community creators connect a domain or subdomain to your platform. Members acces
 
 Your platform handles authentication, content delivery, payment processing, and community moderation. The creator's brand remains front and center throughout the member experience.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Expert communities** - Premium access to expert knowledge
 - **Mastermind groups** - High-ticket accountability communities
@@ -67,4 +67,4 @@ Your platform handles authentication, content delivery, payment processing, and 
 
 Give community builders the professional platform their members deserve. Custom domains make your infrastructure invisible while amplifying creator brands.
 
-[Add custom domains now](https://app.saaskevin.com/auth/join) - Setup takes 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

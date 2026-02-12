@@ -51,7 +51,7 @@ Creators connect their domain or subdomain. Your platform handles product displa
 
 When customers download products, the URLs reference the creator's domain. Email receipts come from the creator's domain (with proper email authentication). Everything feels like the creator's independent business.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Course creators** - Online courses at custom domains
 - **Template sellers** - Design, Notion, spreadsheet templates
@@ -67,4 +67,4 @@ When customers download products, the URLs reference the creator's domain. Email
 
 Help creators build real businesses with branded digital product stores. Custom domains make your platform invisible infrastructure.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - 5 minute setup, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

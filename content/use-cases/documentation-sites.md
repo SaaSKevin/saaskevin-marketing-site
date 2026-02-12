@@ -51,7 +51,7 @@ Companies connect a subdomain like **docs.company.com** to your platform. Your d
 
 Internal links, search functionality, and versioning all work at the custom domain. Your platform powers it invisibly.
 
-## Common Use Cases
+## Common Scenarios
 
 - **API documentation** - Technical API reference at company domain
 - **Product documentation** - User guides and help articles
@@ -67,4 +67,4 @@ Internal links, search functionality, and versioning all work at the custom doma
 
 Help software companies host professional documentation at their own domain. Custom domains make your platform invisible infrastructure.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

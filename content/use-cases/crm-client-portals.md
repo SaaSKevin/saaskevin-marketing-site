@@ -51,7 +51,7 @@ Businesses connect a subdomain like **portal.company.com** to your platform. Cli
 
 Your platform handles authentication, data display, and notifications. The business's brand stays consistent throughout the client experience.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Marketing agencies** - Client campaign dashboards and reports
 - **Development shops** - Project tracking and deliverables
@@ -67,4 +67,4 @@ Your platform handles authentication, data display, and notifications. The busin
 
 Give agencies and consultancies the white-label infrastructure they need. Custom domains make your CRM invisible while powering their client relationships.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

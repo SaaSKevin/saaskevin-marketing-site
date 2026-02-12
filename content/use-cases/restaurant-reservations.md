@@ -51,7 +51,7 @@ Restaurants add a subdomain (like **book.restaurant.com**) or integrate booking 
 
 Guests browse availability, select a time, and complete their reservation—all at the restaurant's domain. Confirmation emails come from **reservations@restaurant.com** (with proper SPF/DKIM setup).
 
-## Common Use Cases
+## Common Scenarios
 
 - **Fine dining restaurants** - High-end establishments with brand requirements
 - **Restaurant groups** - Multiple locations under one management company
@@ -67,4 +67,4 @@ Guests browse availability, select a time, and complete their reservation—all 
 
 Give restaurants the branded reservation experience their guests expect. Custom domains integrate your platform invisibly into their existing brand.
 
-[Add custom domains today](https://app.saaskevin.com/auth/join) - Setup in 5 minutes, first 100 domains free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

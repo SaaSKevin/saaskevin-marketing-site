@@ -3,6 +3,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
+import {
+  MARKETING_URLS,
+  PRICING_COPY,
+  PRICING_OFFER,
+  SIGNUP_CTA_TEXT,
+} from "@/lib/marketing-constants"
 
 /* Pricing section */
 export function Pricing() {
@@ -43,7 +49,9 @@ export function Pricing() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span><strong className="text-foreground">100</strong> domains included</span>
+                <span>
+                  <strong className="text-foreground">{PRICING_OFFER.freeDomains}</strong> domains included
+                </span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
@@ -61,8 +69,8 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button variant="outline" className="w-full border-border text-foreground hover:text-foreground hover:bg-transparent" asChild>
-                <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
-                  Start Building For Free
+                <Link href={MARKETING_URLS.auth.join} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
+                  {SIGNUP_CTA_TEXT}
                 </Link>
               </Button>
             </div>
@@ -78,20 +86,12 @@ export function Pricing() {
                 <p className="text-sm text-muted-foreground mt-1">Domain pricing after free tier</p>
               </div>
               <div className="text-right">
-                <div className="text-3xl font-bold text-foreground">$0.09</div>
+                <div className="text-3xl font-bold text-foreground">{PRICING_COPY.pricePerDomain}</div>
                 <div className="text-xs text-muted-foreground">per domain per month</div>
               </div>
             </div>
 
-            <div className="space-y-4 mb-6">
-              {/* <div className="rounded-xl bg-secondary/50 border border-border p-4">
-                <div className="flex justify-between items-baseline mb-1">
-                  <span className="font-medium text-foreground">Domains</span>
-                  <span className="font-bold text-foreground">$0.09<span className="text-muted-foreground text-xs font-normal">/mo</span></span>
-                </div>
-                <p className="text-xs text-muted-foreground">per domain after first 100</p>
-              </div> */}
-            </div>
+            <div className="space-y-4 mb-6" />
 
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-start gap-3">
@@ -100,7 +100,7 @@ export function Pricing() {
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
-                <span>Billing only starts after first 100 free domains</span>
+                <span>{PRICING_COPY.billingStartsAfterFreeTier}</span>
               </div>
               {/* <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-emerald-500 mt-0.5" />
@@ -114,8 +114,8 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button className="w-full bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href="https://app.saaskevin.com/auth/join" aria-label="Get started" tabIndex={0}>
-                  Start Building For Free
+                <Link href={MARKETING_URLS.auth.join} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
+                  {SIGNUP_CTA_TEXT}
                 </Link>
               </Button>
             </div>

@@ -51,7 +51,7 @@ Users connect a domain or subdomain (like **book.consultant.com**). We guide the
 
 Booking confirmations can be sent from their domain, calendar invites can reference their domain—everything feels like it's their tool, not yours.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Consultants** - Client booking at professional domain
 - **Coaches** - Session scheduling at personal brand domain
@@ -67,4 +67,4 @@ First **100 domains free**. Then **$0.09 per domain per month**. Most scheduling
 
 Give professionals the scheduling experience they need. Custom domains make your platform invisible infrastructure—users present their brand, you handle the technology.
 
-[Add custom domains to your scheduler](https://app.saaskevin.com/auth/join) - 5 minute setup, first 100 free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}

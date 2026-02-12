@@ -1,8 +1,9 @@
 import { getAllBlogPosts } from "@/lib/blog"
+import { MARKETING_URLS } from "@/lib/marketing-constants"
 
 export const dynamic = "force-static"
 
-const SITE_URL = "https://saaskevin.com"
+const SITE_URL = MARKETING_URLS.site
 
 const escapeXml = (value: string) =>
   value

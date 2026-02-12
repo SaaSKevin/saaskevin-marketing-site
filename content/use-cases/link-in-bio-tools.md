@@ -54,7 +54,7 @@ SaaSKevin makes custom domains trivial to add. Your creators get:
 
 Your backend code doesn't change. You're already serving content at **yourapp.com/creator**—now you also serve it at **creator.com**.
 
-## Common Use Cases
+## Common Scenarios
 
 - **Instagram influencers** - Professional link hub at their personal domain
 - **YouTubers** - Channel domain pointing to all their content links
@@ -70,4 +70,4 @@ Start with **100 free custom domains**. After that, **$0.09 per domain per month
 
 Add custom domains to your link-in-bio platform today. Your creators will thank you, and your premium tier will finally have the feature it needs to convert.
 
-[Ready to start?](https://app.saaskevin.com/auth/join) The first 100 domains are free.
+[{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) - {{SIGNUP_OFFER_LINE}}
