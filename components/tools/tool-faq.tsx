@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 type FaqItem = {
   question: string
   answer: string
@@ -42,6 +44,17 @@ export function ToolFaq({ items }: ToolFaqProps) {
           </div>
         ))}
       </dl>
+      <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
+        Need setup examples for real SaaS products? Browse our{" "}
+        <Link href="/industries" className="text-primary hover:underline">
+          industry guides
+        </Link>{" "}
+        and explore all{" "}
+        <Link href="/tools" className="text-primary hover:underline">
+          free domain tools
+        </Link>
+        .
+      </p>
     </section>
   )
 }

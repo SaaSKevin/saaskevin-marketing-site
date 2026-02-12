@@ -77,6 +77,22 @@ export function IndustryCTA({
                   ))}
                 </div>
               )}
+
+              <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
+                Validate DNS and SSL during onboarding with our{" "}
+                <Link href="/tools" className="text-primary hover:underline">
+                  free domain tools
+                </Link>
+                , including{" "}
+                <Link href="/tools/dns-lookup" className="text-primary hover:underline">
+                  DNS Lookup
+                </Link>{" "}
+                and{" "}
+                <Link href="/tools/ssl-checker" className="text-primary hover:underline">
+                  SSL Checker
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>
