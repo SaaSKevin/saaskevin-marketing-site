@@ -11,7 +11,7 @@ import { MARKETING_URLS, PRICING_COPY } from "@/lib/marketing-constants"
 export const metadata: Metadata = {
   title: "Industries - Custom Domains for Every SaaS",
   description:
-    "See how SaaSKevin helps platforms across industries add custom domains. From link-in-bio tools to scheduling apps, offer white-label domains in 5 minutes.",
+    "Explore who SaaSKevin is for. If you build creator, commerce, scheduling, or client-facing products, add white-label custom domains in minutes.",
   alternates: {
     canonical: "/industries",
   },
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Industries - Custom Domains for Every SaaS | SaaSKevin",
     description:
-      "See how SaaSKevin helps platforms across industries add custom domains. From link-in-bio tools to scheduling apps.",
+      "Explore who SaaSKevin is for, from creator tools to scheduling and client-facing platforms.",
     url: `${MARKETING_URLS.site}/industries`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Industries - Custom Domains for Every SaaS | SaaSKevin",
-    description: "See how SaaSKevin helps platforms across industries add custom domains.",
+    description: "Explore who SaaSKevin is for and where custom domains create the most value.",
   },
 }
 
@@ -49,7 +49,7 @@ export default async function IndustriesPage() {
         "@type": "CollectionPage",
         name: "Industries - Custom Domains for Every SaaS",
         description:
-          "See how SaaSKevin helps platforms across industries add custom domains. From link-in-bio tools to scheduling apps, offer white-label domains in 5 minutes.",
+          "Explore who SaaSKevin is for. If you build creator, commerce, scheduling, or client-facing products, add white-label custom domains in minutes.",
         url: `${SITE_URL}/industries`,
         mainEntity: {
           "@type": "ItemList",
@@ -106,18 +106,19 @@ export default async function IndustriesPage() {
               />
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-sm text-muted-foreground mb-8 border border-border">
-              <span>{industries.length} Industries</span>
+              <span>{industries.length} Use Cases</span>
               <span className="text-muted-foreground/50">•</span>
-              <span>{industryGuides.length} Industry Guides</span>
+              <span>{industryGuides.length} Guides</span>
             </div>
 
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl max-w-4xl text-balance leading-[1.1]">
-              Custom Domains for <span className="text-primary">Every Industry</span>
+              Custom Domains for <span className="text-primary">Customer-Facing SaaS Products</span>
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              See how platforms across industries use SaaSKevin to offer white-label custom
-              domains. From creator tools to business platforms, add custom domains in 5 minutes.
+              If your product publishes links,
+              pages, bookings, storefronts, or client portals, SaaSKevin helps you launch
+              white-label custom domains quickly.
             </p>
           </div>
         </div>
@@ -135,7 +136,7 @@ export default async function IndustriesPage() {
           {industryGuides.length === 0 && (
             <div className="text-center py-12">
               <p className="text-muted-foreground">
-                Industry guides are coming soon. Check back later!
+                Use-case guides are coming soon. Check back later!
               </p>
             </div>
           )}
@@ -144,8 +145,8 @@ export default async function IndustriesPage() {
 
       {/* CTA Section */}
       <IndustryCTA
-        title="Ready for Your Industry?"
-        description={`No matter your industry, SaaSKevin makes it easy to offer custom domains. Start with ${PRICING_COPY.freeCustomDomains}.`}
+        title="Not sure if this is for you?"
+        description={`If your users publish anything customer-facing, SaaSKevin likely fits. Start with ${PRICING_COPY.freeCustomDomains}.`}
       />
     </SiteShell>
   )

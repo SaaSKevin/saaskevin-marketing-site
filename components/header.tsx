@@ -31,10 +31,10 @@ export function Header() {
             Pricing
           </Link>
           <Link href="/#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
-            See It Live
+            Demo
           </Link>
           <Link href="/industries" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
-            Industries
+            Who It's For
           </Link>
           <Link href="/tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Free Tools
@@ -92,14 +92,14 @@ export function Header() {
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              See It Live
+              Demo
             </Link>
             <Link
               href="/industries"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Industries
+              Who It's For
             </Link>
             <Link
               href="/tools"

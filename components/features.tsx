@@ -1,4 +1,4 @@
-import { Globe, Shield, Zap, Code, Palette, BarChart3 } from "lucide-react"
+import { Globe, Shield, Zap, Palette, BarChart3 } from "lucide-react"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
 import { PRICING_COPY, PRICING_OFFER } from "@/lib/marketing-constants"
@@ -16,13 +16,13 @@ const features = [
   },
   {
     icon: Zap,
-    title: "We Handle DNS",
-    description: "Your users follow simple instructions. We provide an optimized UI to guide them through the process.",
+    title: "One-Click DNS Setup",
+    description: "Your users can add the right DNS record in one click, with clear prompts that make setup feel effortless.",
   },
   {
-    icon: Code,
-    title: "Read One Header",
-    description: "Route requests with X-SaaSKevin-Customer-ID. This is all you need to know which customer is visiting.",
+    icon: Globe,
+    title: "Unlimited Domains",
+    description: "Add as many customer domains as you need. Grow confidently without artificial limits.",
   },
   {
     icon: Palette,
@@ -31,8 +31,8 @@ const features = [
   },
   {
     icon: BarChart3,
-    title: "Domain Dashboard",
-    description: "See all your customers' domains and their status in one place. Track usage and troubleshoot issues instantly.",
+    title: "Fast Worldwide",
+    description: "Pages are delivered from nearby regions with built-in caching, so customers get a fast, reliable experience wherever they are.",
   },
 ]
 
