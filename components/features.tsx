@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Globe, Shield, Zap, Palette, BarChart3 } from "lucide-react"
 import { Mascot } from "@/components/mascot"
 import { MASCOTS } from "@/components/mascots"
@@ -94,6 +95,14 @@ export function Features() {
                 <div className="p-4 text-sm text-foreground text-center border-l border-border font-medium">{row.saaskevin}</div>
               </div>
             ))}
+          </div>
+          <div className="mt-4 text-center">
+            <Link
+              href="/compare"
+              className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              See detailed comparisons →
+            </Link>
           </div>
         </div>
 

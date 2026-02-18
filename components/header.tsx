@@ -36,6 +36,9 @@ export function Header() {
           <Link href="/industries" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Who It's For
           </Link>
+          <Link href="/compare" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
+            Compare
+          </Link>
           <Link href="/tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap">
             Free Tools
           </Link>
@@ -100,6 +103,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Who It's For
+            </Link>
+            <Link
+              href="/compare"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Compare
             </Link>
             <Link
               href="/tools"
