@@ -26,7 +26,7 @@ export default function RefundsPage() {
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                SaaSKevin offers a simple, domain-based pricing model with a generous free tier, allowing you to evaluate our service before incurring any charges. We believe in transparency and fairness, and this policy outlines how refunds are handled for subscription billing.
+                SaaSKevin offers a simple, domain-based pricing model with a free tier, allowing you to evaluate our service before incurring any charges. We believe in transparency and fairness, and this policy outlines how refunds are handled for subscription billing.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Our pricing includes <strong className="text-foreground">{PRICING_COPY.freeDomainsFree}</strong>. Traffic is included under a <strong className="text-foreground">fair-use policy</strong>.
@@ -47,7 +47,7 @@ export default function RefundsPage() {
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">General Refund Policy</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Due to the nature of our service and the generous free tier that allows evaluation before payment:
+                Due to the nature of our service and the free tier that allows evaluation before payment:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">Subscription fees</strong> are generally non-refundable once charged</li>

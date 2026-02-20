@@ -29,7 +29,7 @@ export function Pricing() {
             Simple, domain-based pricing
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Start for free with generous limits. Pay only for domains as you scale.
+            Start for free. Pay only for domains as you scale.
           </p>
         </div>
 
