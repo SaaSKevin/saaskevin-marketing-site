@@ -63,7 +63,7 @@ For email sending, the writer verifies domain ownership with SPF/DKIM records. S
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09 per domain per month**. Most newsletter platforms charge writers $10-20/month for custom domain support, making this a profitable feature.
+**First 3 domains free**. Then **$0.15 per domain per month**. Most newsletter platforms charge writers $10-20/month for custom domain support, making this a profitable feature.
 
 ## Get Started
 

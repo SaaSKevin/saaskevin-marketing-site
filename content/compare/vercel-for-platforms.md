@@ -18,7 +18,7 @@ metaKeywords:
 
 ## TL;DR
 
-Vercel for Platforms is a great multi-tenant custom domain solution—if your app is deployed on Vercel. SaaSKevin works with any hosting provider. Vercel includes domains in your plan pricing (no per-domain fee), but locks you into their ecosystem. SaaSKevin costs $0.09/domain/month but gives you a pre-built widget, works anywhere, and requires only 3 lines of backend code.
+Vercel for Platforms is a great multi-tenant custom domain solution—if your app is deployed on Vercel. SaaSKevin works with any hosting provider. Vercel includes domains in your plan pricing (no per-domain fee), but locks you into their ecosystem. SaaSKevin costs $0.15/domain/month but gives you a pre-built widget, works anywhere, and requires only 3 lines of backend code.
 
 ## At a Glance
 
@@ -29,8 +29,8 @@ Vercel for Platforms is a great multi-tenant custom domain solution—if your ap
 | **Built-in user UI** | Pre-built embeddable widget | Build your own |
 | **SSL certificates** | Automatic | Automatic (under 5 seconds) |
 | **DNS setup help** | One-click DNS with guided UI | Build your own |
-| **Free tier** | 100 domains | 50 domains (Hobby plan) |
-| **Price per domain** | $0.09/month | $0 (included in Vercel plan) |
+| **Free tier** | 3 domains | 50 domains (Hobby plan) |
+| **Price per domain** | $0.15/month | $0 (included in Vercel plan) |
 | **Hosting requirement** | Any hosting provider | Vercel only |
 | **Wildcard domains** | Supported | Supported (requires Vercel nameservers) |
 | **API rate limits** | None published | 100 domain adds/hour |
@@ -60,14 +60,14 @@ Vercel's pricing model is fundamentally different. Custom domains carry no per-d
 - **Vercel Enterprise**: Custom pricing, up to 1,000,000 domains
 
 SaaSKevin charges per domain:
-- **Free**: 100 custom domains
-- **After free tier**: $0.09/domain/month
+- **Free**: 3 custom domains
+- **After free tier**: $0.15/domain/month
 
 **Example: 500 domains, team of 3**
-- **SaaSKevin**: 100 free + 400 x $0.09 = **$36/month** (plus your existing hosting costs)
+- **SaaSKevin**: 3 free + 497 x $0.15 = **$74.55/month** (plus your existing hosting costs)
 - **Vercel Pro**: 3 x $20 = **$60/month** (plus compute/bandwidth overage)
 
-At small scale, SaaSKevin is typically cheaper. At larger scale, Vercel's included-domain model can be more cost-effective if you're already paying for Vercel hosting. But you need to factor in the total Vercel bill—not just the domain-related costs.
+The pricing models are fundamentally different: SaaSKevin charges per domain, Vercel charges per seat. For solo founders or small teams with many domains, SaaSKevin can be cheaper. For larger teams already on Vercel, the included-domain model avoids per-domain costs entirely. You need to factor in the total Vercel bill—not just the domain-related costs.
 
 ## Rate Limits
 
@@ -80,7 +80,7 @@ SaaSKevin has no published domain addition rate limits.
 - Teams hosting on any provider (not just Vercel)
 - SaaS platforms that want a pre-built customer-facing domain management UI
 - Companies that want to avoid vendor lock-in for their hosting
-- Small teams where $0.09/domain is more predictable than per-seat platform pricing
+- Small teams where $0.15/domain is more predictable than per-seat platform pricing
 
 ## Who Vercel for Platforms Is Best For
 

@@ -61,7 +61,7 @@ Students browse classes, book spots, and receive confirmations—all branded as 
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Studios typically pay $50-150/month for booking software—custom domains justify premium pricing.
+**First 3 domains free**. Then **$0.15/domain/month**. Studios typically pay $50-150/month for booking software—custom domains justify premium pricing.
 
 ## Get Started
 

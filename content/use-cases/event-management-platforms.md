@@ -61,7 +61,7 @@ Registration forms, ticket purchases, and email confirmations all reference the 
 
 ## Pricing
 
-**First 100 domains free**. After that, **$0.09/domain/month**. For event platforms, you can charge organizers $20-50/event for custom domain access—a significant revenue opportunity.
+**First 3 domains free**. After that, **$0.15/domain/month**. For event platforms, you can charge organizers $20-50/event for custom domain access—a significant revenue opportunity.
 
 ## Get Started
 

@@ -18,7 +18,7 @@ metaKeywords:
 
 ## TL;DR
 
-Entri is a multi-product domain platform (Connect, Secure, Power, Sell) that excels at DNS auto-configuration—automatically detecting and configuring DNS for 75% of domains. SaaSKevin is a single focused product with a pre-built widget that handles everything in one integration. Entri starts at $249/month with 50 domain connections. SaaSKevin starts free with 100 domains.
+Entri is a multi-product domain platform (Connect, Secure, Power, Sell) that excels at DNS auto-configuration—automatically detecting and configuring DNS for 75% of domains. SaaSKevin is a single focused product with a pre-built widget that handles everything in one integration. Entri starts at $249/month with 50 domain connections. SaaSKevin starts free with 3 domains.
 
 ## At a Glance
 
@@ -29,7 +29,7 @@ Entri is a multi-product domain platform (Connect, Secure, Power, Sell) that exc
 | **Built-in user UI** | Pre-built embeddable widget | Entri Connect modal (DNS auto-setup) |
 | **SSL certificates** | Automatic | Entri Secure (separate product, Let's Encrypt) |
 | **DNS setup help** | One-click DNS + guided UI | Auto-detection for 75+ providers (75% zero-touch) |
-| **Free tier** | 100 domains free | None |
+| **Free tier** | 3 domains free | None |
 | **Starting price** | $0/month | $249/month (50 domain connections) |
 | **Hosting requirement** | Any hosting provider | Any hosting provider |
 | **Products needed** | 1 (SaaSKevin) | Up to 4 (Connect + Secure + Power + Sell) |
@@ -61,8 +61,8 @@ If reducing DNS-related support tickets to near-zero is your top priority and yo
 The pricing gap is substantial, especially at early stages.
 
 **SaaSKevin:**
-- 100 domains free (forever)
-- $0.09/domain/month after that
+- 3 domains free (forever)
+- $0.15/domain/month after that
 - No minimum spend
 
 **Entri:**
@@ -71,14 +71,14 @@ The pricing gap is substantial, especially at early stages.
 - Each product (Connect, Secure, Power) may be priced separately
 
 **Example: 50 domains (early-stage)**
-- **SaaSKevin**: $0/month (within free tier)
+- **SaaSKevin**: 3 free + 47 x $0.15 = $7.05/month
 - **Entri**: $249/month (Startup plan)
 
 **Example: 500 domains**
-- **SaaSKevin**: 100 free + 400 x $0.09 = $36/month
+- **SaaSKevin**: 3 free + 497 x $0.15 = $74.55/month
 - **Entri**: Custom pricing (contact sales)
 
-For startups and early-stage products, SaaSKevin's free tier and $0.09/domain pricing means you can validate the custom domain feature without spending $249/month before you know if customers want it.
+For startups and early-stage products, SaaSKevin's free tier and $0.15/domain pricing means you can validate the custom domain feature without spending $249/month before you know if customers want it.
 
 ## Enterprise Features
 
@@ -99,7 +99,7 @@ SaaSKevin does not offer domain selling. It focuses on managing custom domains t
 - Startups and growing SaaS platforms that want to start free
 - Teams that prefer a single, focused product over a multi-product suite
 - Developers who want a 5-minute integration, not a week-long implementation
-- Cost-conscious teams where $0.09/domain matters vs $249/month minimum
+- Cost-conscious teams where $0.15/domain matters vs $249/month minimum
 - Products where users are technical enough to follow guided DNS setup
 
 ## Who Entri Is Best For
@@ -112,6 +112,6 @@ SaaSKevin does not offer domain selling. It focuses on managing custom domains t
 
 ## Get Started
 
-Try SaaSKevin free with 100 domains and a 5-minute setup. No sales call, no minimum spend, no multi-product complexity.
+Try SaaSKevin free with 3 domains and a 5-minute setup. No sales call, no minimum spend, no multi-product complexity.
 
 [{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) — {{SIGNUP_OFFER_LINE}}

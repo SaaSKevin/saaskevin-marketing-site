@@ -61,7 +61,7 @@ Your platform handles authentication, data display, and notifications. The busin
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. CRM platforms charge $50-200/month extra for white-label custom domains.
+**First 3 domains free**. Then **$0.15/domain/month**. CRM platforms charge $50-200/month extra for white-label custom domains.
 
 ## Get Started
 

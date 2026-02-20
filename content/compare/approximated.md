@@ -17,7 +17,7 @@ metaKeywords:
 
 ## TL;DR
 
-Approximated and SaaSKevin both provide dedicated custom domain infrastructure for SaaS. The key differences: SaaSKevin includes a pre-built embeddable widget (Approximated is API-only), SaaSKevin offers 100 free domains (Approximated has a $20/month minimum), and SaaSKevin costs $0.09/domain vs Approximated's $0.20/domain. Approximated offers dedicated infrastructure per customer and uses 5 redundant certificate authorities.
+Approximated and SaaSKevin both provide dedicated custom domain infrastructure for SaaS. The key differences: SaaSKevin includes a pre-built embeddable widget (Approximated is API-only), SaaSKevin offers 3 free domains (Approximated has a $20/month minimum), and SaaSKevin costs $0.15/domain vs Approximated's $0.20/domain. Approximated offers dedicated infrastructure per customer and uses 5 redundant certificate authorities.
 
 ## At a Glance
 
@@ -28,8 +28,8 @@ Approximated and SaaSKevin both provide dedicated custom domain infrastructure f
 | **Built-in user UI** | Pre-built embeddable widget | DNS widget available, but no full management UI |
 | **SSL certificates** | Automatic | Automatic (5 redundant CAs) |
 | **DNS setup help** | One-click DNS with guided UI | Embeddable DNS checking widget |
-| **Free tier** | 100 domains free | None (7-day trial, $20/month minimum) |
-| **Price per domain** | $0.09/month | $0.20/month |
+| **Free tier** | 3 domains free | None (7-day trial, $20/month minimum) |
+| **Price per domain** | $0.15/month | $0.20/month |
 | **Hosting requirement** | Any hosting provider | Any hosting provider |
 | **Bandwidth included** | Included | 400 GB (then $0.05/GB) |
 | **Infrastructure** | Shared edge | Dedicated cluster per customer |
@@ -47,8 +47,8 @@ Both approaches work. Approximated gives you more control over the customer expe
 This is a significant differentiator.
 
 **SaaSKevin:**
-- 100 domains free (forever)
-- $0.09/domain/month after that
+- 3 domains free (forever)
+- $0.15/domain/month after that
 - No minimum spend
 
 **Approximated:**
@@ -59,15 +59,15 @@ This is a significant differentiator.
 - Volume discounts: 5% off per 1,000 domains, up to 50% off
 
 **Example: 50 domains (early-stage)**
-- **SaaSKevin**: $0/month (within free tier)
+- **SaaSKevin**: 3 free + 47 x $0.15 = $7.05/month
 - **Approximated**: $20/month (minimum)
 
 **Example: 500 domains**
-- **SaaSKevin**: 100 free + 400 x $0.09 = $36/month
+- **SaaSKevin**: 3 free + 497 x $0.15 = $74.55/month
 - **Approximated**: 500 x $0.20 = $100/month
 
 **Example: 2,000 domains**
-- **SaaSKevin**: 100 free + 1,900 x $0.09 = $171/month
+- **SaaSKevin**: 3 free + 1,997 x $0.15 = $299.55/month
 - **Approximated**: 2,000 x $0.20 = $400/month (minus ~5% volume discount = ~$380/month)
 
 SaaSKevin is substantially cheaper at every scale.
@@ -89,8 +89,8 @@ SaaSKevin includes bandwidth in the per-domain pricing with no separate metering
 ## Who SaaSKevin Is Best For
 
 - Teams that want a pre-built customer-facing widget, not just an API
-- Early-stage startups that benefit from 100 free domains
-- Cost-conscious teams where $0.09/domain matters vs $0.20/domain
+- Early-stage startups that benefit from 3 free domains
+- Cost-conscious teams where $0.15/domain matters vs $0.20/domain
 - Products that want the fastest integration path (5 minutes vs hours)
 
 ## Who Approximated Is Best For
@@ -102,6 +102,6 @@ SaaSKevin includes bandwidth in the per-domain pricing with no separate metering
 
 ## Get Started
 
-Start with 100 free domains and a 5-minute integration. No credit card required, no minimum spend.
+Start with 3 free domains and a 5-minute integration. No credit card required, no minimum spend.
 
 [{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) — {{SIGNUP_OFFER_LINE}}

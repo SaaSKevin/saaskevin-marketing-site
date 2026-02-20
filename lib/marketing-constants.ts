@@ -7,11 +7,11 @@ export const MARKETING_URLS = {
   },
 } as const
 
-export const SIGNUP_CTA_TEXT = "Claim 100 Free Domains"
+export const SIGNUP_CTA_TEXT = "Claim 3 Free Domains"
 
 export const PRICING_OFFER = {
-  freeDomains: 100,
-  pricePerDomainUsd: 0.09,
+  freeDomains: 3,
+  pricePerDomainUsd: 0.15,
 } as const
 
 export const MARKETING_CONTENT_TOKENS = {

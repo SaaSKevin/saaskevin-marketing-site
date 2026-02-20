@@ -29,8 +29,8 @@ Cloudflare for SaaS gives you custom hostnames backed by Cloudflare's CDN and DD
 | **Built-in user UI** | Pre-built embeddable widget | Build your own |
 | **SSL certificates** | Automatic | Automatic |
 | **DNS setup help** | One-click DNS with guided UI | Build your own DNS instruction flow |
-| **Free tier** | 100 domains free | 100 hostnames free |
-| **Price per domain** | $0.09/month | $0.10/month |
+| **Free tier** | 3 domains free | 100 hostnames free |
+| **Price per domain** | $0.15/month | $0.10/month |
 | **Hosting requirement** | Any hosting provider | Any origin (but need Cloudflare zone) |
 | **Apex domains** | Supported | Enterprise plan only |
 | **Wildcard domains** | Supported | Enterprise plan only |
@@ -55,14 +55,14 @@ Where Cloudflare gates features behind Enterprise pricing, SaaSKevin includes th
 
 ## Pricing Comparison
 
-Both services offer 100 free domains to start, and per-domain pricing is similar ($0.09 vs $0.10/month). The real cost difference is in engineering time.
+Cloudflare for SaaS offers 100 free hostnames; SaaSKevin offers 3 free domains to start. Per-domain pricing is $0.15/month (SaaSKevin) vs $0.10/month (Cloudflare), but the real cost difference is in engineering time.
 
 Cloudflare for SaaS is "free" in that it's included with any Cloudflare plan, but you'll spend days or weeks building the integration, DNS instruction UI, and monitoring. Enterprise features (apex domains, wildcards, custom certificates, CA selection) require a sales conversation with no public pricing.
 
-SaaSKevin charges $0.09/domain/month after 100 free domains, and the integration takes 5 minutes. No hidden costs, no Enterprise gates, no sales calls.
+SaaSKevin charges $0.15/domain/month after 3 free domains, and the integration takes 5 minutes. No hidden costs, no Enterprise gates, no sales calls.
 
 **Example: 500 domains**
-- **SaaSKevin**: 100 free + 400 x $0.09 = $36/month
+- **SaaSKevin**: 3 free + 497 x $0.15 = $74.55/month
 - **Cloudflare**: 100 free + 400 x $0.10 = $40/month (plus engineering time to build and maintain the integration)
 
 ## DNS and SSL

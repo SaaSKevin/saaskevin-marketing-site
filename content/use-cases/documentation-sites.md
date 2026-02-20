@@ -61,7 +61,7 @@ Internal links, search functionality, and versioning all work at the custom doma
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Documentation platforms charge $50-200/month for custom domain support on team and enterprise plans.
+**First 3 domains free**. Then **$0.15/domain/month**. Documentation platforms charge $50-200/month for custom domain support on team and enterprise plans.
 
 ## Get Started
 

@@ -63,7 +63,7 @@ Product pages, cart, and checkout all happen at the merchant's domain. To custom
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. E-commerce platforms typically charge $10-30/month for custom domain support, making this a highly profitable feature.
+**First 3 domains free**. Then **$0.15/domain/month**. E-commerce platforms typically charge $10-30/month for custom domain support, making this a highly profitable feature.
 
 ## Get Started
 

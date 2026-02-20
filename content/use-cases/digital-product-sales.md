@@ -61,7 +61,7 @@ When customers download products, the URLs reference the creator's domain. Email
 
 ## Pricing
 
-**First 100 domains free**. After that, **$0.09/domain/month**. Digital product platforms typically charge creators $10-20/month for custom domain support.
+**First 3 domains free**. After that, **$0.15/domain/month**. Digital product platforms typically charge creators $10-20/month for custom domain support.
 
 ## Get Started
 

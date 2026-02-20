@@ -61,7 +61,7 @@ Booking confirmations can be sent from their domain, calendar invites can refere
 
 ## Pricing
 
-First **100 domains free**. Then **$0.09 per domain per month**. Most scheduling platforms charge $10-15/month for custom domain access, making this a highly profitable feature.
+First **3 domains free**. Then **$0.15 per domain per month**. Most scheduling platforms charge $10-15/month for custom domain access, making this a highly profitable feature.
 
 ## Get Started
 

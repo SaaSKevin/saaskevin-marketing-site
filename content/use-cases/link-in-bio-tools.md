@@ -64,7 +64,7 @@ Your backend code doesn't change. You're already serving content at **yourapp.co
 
 ## Pricing
 
-Start with **100 free custom domains**. After that, **$0.09 per domain per month**. No setup fees, no hidden costs. If a creator removes their domain, you stop paying.
+Start with **3 free custom domains**. After that, **$0.15 per domain per month**. No setup fees, no hidden costs. If a creator removes their domain, you stop paying.
 
 ## Get Started
 

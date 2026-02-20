@@ -61,7 +61,7 @@ Your platform handles authentication, content delivery, payment processing, and 
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Membership platforms charge $50-200/month for custom domain access, making this highly profitable.
+**First 3 domains free**. Then **$0.15/domain/month**. Membership platforms charge $50-200/month for custom domain access, making this highly profitable.
 
 ## Get Started
 

@@ -28,8 +28,8 @@ CoAlias is designed for no-code platforms (Bubble, Adalo, Webflow, etc.) with pe
 | **Target audience** | Developers & SaaS teams | No-code app builders |
 | **Built-in user UI** | Pre-built embeddable widget | Dashboard (not embeddable) |
 | **SSL certificates** | Automatic | Automatic |
-| **Free tier** | 100 domains free | 10 domains, 4,000 requests (CoAlias branded) |
-| **Pricing model** | Per domain ($0.09/month) | Per tier ($25-200+/month) |
+| **Free tier** | 3 domains free | 10 domains, 4,000 requests (CoAlias branded) |
+| **Pricing model** | Per domain ($0.15/month) | Per tier ($25-200+/month) |
 | **Request limits** | None | 4,000 to 2,000,000/month by tier |
 | **Hosting requirement** | Any hosting provider | No-code platforms primarily |
 | **Per-domain SEO** | Not included | Favicon, Open Graph, meta tags per domain |
@@ -53,17 +53,17 @@ CoAlias uses **tier-based pricing** with request limits. SaaSKevin uses **per-do
 - Dedicated: $200+/month — Custom
 
 **SaaSKevin:**
-- Free: 100 domains, no request limits
-- After free tier: $0.09/domain/month, no request limits
+- Free: 3 domains, no request limits
+- After free tier: $0.15/domain/month, no request limits
 
 The CoAlias model means your costs are driven by traffic, not domains. If you have a few high-traffic domains, CoAlias could be cheaper. If you have many domains with moderate traffic, SaaSKevin is cheaper and more predictable.
 
 **Example: 200 domains, moderate traffic (300,000 requests/month)**
-- **SaaSKevin**: 100 free + 100 x $0.09 = $9/month
+- **SaaSKevin**: 3 free + 197 x $0.15 = $29.55/month
 - **CoAlias**: Basic tier = $50/month (400,000 request limit)
 
 **Example: 50 domains, high traffic (1,500,000 requests/month)**
-- **SaaSKevin**: $0/month (within free tier)
+- **SaaSKevin**: 3 free + 47 x $0.15 = $7.05/month
 - **CoAlias**: Growth tier = $100/month (2,000,000 request limit)
 
 CoAlias also **auto-upgrades your plan** if you exceed request limits. This means unexpected traffic spikes can increase your bill without warning.
@@ -88,7 +88,7 @@ CoAlias limits wildcard domains by plan: 0 on the free tier, 1 on Dev, 2 on Basi
 
 - Developers building SaaS with code (any framework, any hosting)
 - Teams that want per-domain pricing with no request limits
-- Startups that benefit from 100 free domains
+- Startups that benefit from 3 free domains
 - Products that need unlimited wildcard domains
 - Teams that want an embeddable customer-facing widget
 

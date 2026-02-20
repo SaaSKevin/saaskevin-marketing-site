@@ -65,7 +65,7 @@ Your application reads `X-SaaSKevin-Customer-Id` to determine which user's portf
 
 ## Pricing
 
-**100 free custom domains** to start. Beyond that, **$0.09/domain/month**. You can pass this cost to users, bundle it into your pricing, or eat it as infrastructure—it's pennies per user.
+**3 free custom domains** to start. Beyond that, **$0.15/domain/month**. You can pass this cost to users, bundle it into your pricing, or eat it as infrastructure—it's pennies per user.
 
 ## Get Started
 

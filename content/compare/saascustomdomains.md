@@ -17,7 +17,7 @@ metaKeywords:
 
 ## TL;DR
 
-SaaSCustomDomains and SaaSKevin solve the same problem—adding custom domains to your SaaS—with different approaches. SaaSKevin offers a pre-built embeddable widget and costs $0.09/domain/month with 100 free domains. SaaSCustomDomains is API-first at $0.20/domain/month with a $20/month minimum, but includes automated DNS instruction emails and a Bubble.io integration.
+SaaSCustomDomains and SaaSKevin solve the same problem—adding custom domains to your SaaS—with different approaches. SaaSKevin offers a pre-built embeddable widget and costs $0.15/domain/month with 3 free domains. SaaSCustomDomains is API-first at $0.20/domain/month with a $20/month minimum, but includes automated DNS instruction emails and a Bubble.io integration.
 
 ## At a Glance
 
@@ -28,8 +28,8 @@ SaaSCustomDomains and SaaSKevin solve the same problem—adding custom domains t
 | **Built-in user UI** | Pre-built embeddable widget | No (API-only) |
 | **SSL certificates** | Automatic | Automatic (including wildcards) |
 | **DNS setup help** | One-click DNS with guided widget | Automated DNS instruction emails |
-| **Free tier** | 100 domains free | None (7-day trial, $20/month minimum) |
-| **Price per domain** | $0.09/month | $0.20/month |
+| **Free tier** | 3 domains free | None (7-day trial, $20/month minimum) |
+| **Price per domain** | $0.15/month | $0.20/month |
 | **Hosting requirement** | Any hosting provider | Any hosting provider |
 | **Uptime SLA** | Available | 99.999% |
 | **Bubble.io integration** | No | Yes (native) |
@@ -45,8 +45,8 @@ The tradeoff: SaaSCustomDomains' automated emails work even when the customer is
 ## Pricing Comparison
 
 **SaaSKevin:**
-- 100 domains free (forever)
-- $0.09/domain/month after that
+- 3 domains free (forever)
+- $0.15/domain/month after that
 - No minimum spend
 
 **SaaSCustomDomains:**
@@ -55,18 +55,18 @@ The tradeoff: SaaSCustomDomains' automated emails work even when the customer is
 - Volume discounts up to 50% at scale
 
 **Example: 50 domains (early-stage)**
-- **SaaSKevin**: $0/month (within free tier)
+- **SaaSKevin**: 3 free + 47 x $0.15 = $7.05/month
 - **SaaSCustomDomains**: $20/month (minimum)
 
 **Example: 500 domains**
-- **SaaSKevin**: 100 free + 400 x $0.09 = $36/month
+- **SaaSKevin**: 3 free + 497 x $0.15 = $74.55/month
 - **SaaSCustomDomains**: 500 x $0.20 = $100/month
 
 **Example: 5,000 domains**
-- **SaaSKevin**: 100 free + 4,900 x $0.09 = $441/month
+- **SaaSKevin**: 3 free + 4,997 x $0.15 = $749.55/month
 - **SaaSCustomDomains**: 5,000 x $0.20 = $1,000/month (before volume discounts)
 
-SaaSKevin is less than half the per-domain cost at every scale.
+SaaSKevin is 25% cheaper per domain at every scale.
 
 ## DNS Onboarding
 
@@ -89,8 +89,8 @@ SaaSKevin uses regional edge deployment with built-in caching and on-demand TLS 
 ## Who SaaSKevin Is Best For
 
 - Teams that want a pre-built customer-facing domain management widget
-- Early-stage startups that benefit from 100 free domains and no minimum spend
-- Cost-conscious teams ($0.09 vs $0.20 per domain)
+- Early-stage startups that benefit from 3 free domains and no minimum spend
+- Cost-conscious teams ($0.15 vs $0.20 per domain)
 - Developers who prefer a widget integration over API-only
 
 ## Who SaaSCustomDomains Is Best For
@@ -102,6 +102,6 @@ SaaSKevin uses regional edge deployment with built-in caching and on-demand TLS 
 
 ## Get Started
 
-Start with 100 free domains and a widget that handles the customer experience for you. No credit card, no minimum spend.
+Start with 3 free domains and a widget that handles the customer experience for you. No credit card, no minimum spend.
 
 [{{SIGNUP_CTA_TEXT}}]({{SIGNUP_JOIN_URL}}) — {{SIGNUP_OFFER_LINE}}

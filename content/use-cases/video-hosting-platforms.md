@@ -61,7 +61,7 @@ Embedded video players reference the custom domain. Direct video links use the c
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Video platforms charge $30-100/month for custom domain support.
+**First 3 domains free**. Then **$0.15/domain/month**. Video platforms charge $30-100/month for custom domain support.
 
 ## Get Started
 

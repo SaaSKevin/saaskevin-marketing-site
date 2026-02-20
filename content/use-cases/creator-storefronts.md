@@ -64,7 +64,7 @@ Your checkout flow doesn't change. Your payment processing stays the same. The o
 
 ## Pricing
 
-First **100 domains are free**. Then **$0.09/domain/month**. Only pay for active domains. If a creator removes their domain or churns, you stop paying.
+First **3 domains are free**. Then **$0.15/domain/month**. Only pay for active domains. If a creator removes their domain or churns, you stop paying.
 
 Most platforms charge creators $10-20/month for custom domain access and pocket the difference.
 

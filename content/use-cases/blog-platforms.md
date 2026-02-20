@@ -61,7 +61,7 @@ RSS feeds, social meta tags, and sitemap.xml all reference the writer's custom d
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Blog platforms charge $5-15/month for custom domain support.
+**First 3 domains free**. Then **$0.15/domain/month**. Blog platforms charge $5-15/month for custom domain support.
 
 ## Get Started
 

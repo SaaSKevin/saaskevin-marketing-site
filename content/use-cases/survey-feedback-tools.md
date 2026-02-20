@@ -61,7 +61,7 @@ Survey questions, progress indicators, and submission confirmations all display 
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Survey platforms charge $50-200/month for custom domain support, especially for enterprise plans.
+**First 3 domains free**. Then **$0.15/domain/month**. Survey platforms charge $50-200/month for custom domain support, especially for enterprise plans.
 
 ## Get Started
 

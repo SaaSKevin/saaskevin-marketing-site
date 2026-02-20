@@ -150,7 +150,7 @@ export default async function ComparisonPage({ params }: PageProps) {
             name: `Is SaaSKevin a good alternative to ${comparison.competitorName}?`,
             acceptedAnswer: {
               "@type": "Answer",
-              text: `SaaSKevin offers a pre-built embeddable widget, 100 free custom domains, and $0.09/domain/month pricing. It integrates in 5 minutes with just 3 lines of backend code, making it a simpler alternative to ${comparison.competitorName} for adding custom domains to your SaaS.`,
+              text: `SaaSKevin offers a pre-built embeddable widget, 3 free custom domains, and $0.15/domain/month pricing. It integrates in 5 minutes with just 3 lines of backend code, making it a simpler alternative to ${comparison.competitorName} for adding custom domains to your SaaS.`,
             },
           },
         ],

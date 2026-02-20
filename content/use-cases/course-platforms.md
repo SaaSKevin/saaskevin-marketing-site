@@ -61,7 +61,7 @@ Your platform handles video hosting, progress tracking, payment processing, and 
 
 ## Pricing
 
-**First 100 domains free**. Then **$0.09/domain/month**. Course platforms typically charge $30-100/month for custom domain access, making this a lucrative feature.
+**First 3 domains free**. Then **$0.15/domain/month**. Course platforms typically charge $30-100/month for custom domain access, making this a lucrative feature.
 
 ## Get Started
 
