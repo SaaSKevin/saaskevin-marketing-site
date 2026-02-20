@@ -6,6 +6,7 @@ competitorName: "CoAlias"
 competitorUrl: "https://coalias.com"
 category: "No-Code Domain Service"
 icon: "Layers"
+logo: "/compare-logos/coalias.svg"
 draft: false
 metaKeywords:
   - "coalias alternative"

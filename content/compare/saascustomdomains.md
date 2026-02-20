@@ -6,6 +6,7 @@ competitorName: "SaaSCustomDomains"
 competitorUrl: "https://saascustomdomains.com"
 category: "Custom Domain Service"
 icon: "Globe"
+logo: "/compare-logos/saascustomdomains.svg"
 draft: false
 metaKeywords:
   - "saascustomdomains alternative"

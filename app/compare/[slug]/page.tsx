@@ -171,6 +171,7 @@ export default async function ComparisonPage({ params }: PageProps) {
         competitorName={comparison.competitorName}
         category={comparison.category}
         icon={comparison.icon}
+        logo={comparison.logo}
       />
 
       <div className="py-12 md:py-16">

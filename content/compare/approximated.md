@@ -6,6 +6,7 @@ competitorName: "Approximated"
 competitorUrl: "https://approximated.app"
 category: "Custom Domain Service"
 icon: "Server"
+logo: "/compare-logos/approximated.svg"
 draft: false
 metaKeywords:
   - "approximated alternative"

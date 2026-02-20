@@ -6,6 +6,7 @@ competitorName: "Cloudflare for SaaS"
 competitorUrl: "https://cloudflare.com"
 category: "CDN Provider"
 icon: "Cloud"
+logo: "/compare-logos/cloudflare.svg"
 draft: false
 metaKeywords:
   - "cloudflare for saas alternative"

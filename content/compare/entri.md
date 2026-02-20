@@ -6,6 +6,7 @@ competitorName: "Entri"
 competitorUrl: "https://entri.com"
 category: "Domain API Platform"
 icon: "Link"
+logo: "/compare-logos/entri.svg"
 draft: false
 metaKeywords:
   - "entri alternative"

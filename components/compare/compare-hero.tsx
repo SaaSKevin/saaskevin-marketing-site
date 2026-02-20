@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
@@ -17,6 +18,7 @@ export interface CompareHeroProps {
   competitorName: string
   category: string
   icon?: string
+  logo?: string
 }
 
 export function CompareHero({
@@ -25,6 +27,7 @@ export function CompareHero({
   competitorName,
   category,
   icon,
+  logo,
 }: CompareHeroProps) {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
@@ -40,7 +43,17 @@ export function CompareHero({
           </Badge>
 
           <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/10 mb-8 ring-1 ring-primary/20">
-            <IndustryIcon iconName={icon} className="h-10 w-10 text-primary" />
+            {logo ? (
+              <Image
+                src={logo}
+                alt={`${competitorName} logo`}
+                width={48}
+                height={48}
+                className="h-12 w-12"
+              />
+            ) : (
+              <IndustryIcon iconName={icon} className="h-10 w-10 text-primary" />
+            )}
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl max-w-3xl text-balance leading-[1.1]">

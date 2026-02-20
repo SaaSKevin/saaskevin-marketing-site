@@ -6,6 +6,7 @@ competitorName: "Vercel for Platforms"
 competitorUrl: "https://vercel.com"
 category: "Hosting Platform"
 icon: "Triangle"
+logo: "/compare-logos/vercel.svg"
 draft: false
 metaKeywords:
   - "vercel for platforms alternative"

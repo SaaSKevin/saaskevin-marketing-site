@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
@@ -29,7 +30,17 @@ export function CompareCard({ comparison, className }: CompareCardProps) {
         <CardHeader className="gap-4 pt-6">
           <div className="flex items-start justify-between gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-              <IndustryIcon iconName={comparison.icon} className="h-6 w-6 text-primary" />
+              {comparison.logo ? (
+                <Image
+                  src={comparison.logo}
+                  alt={`${comparison.competitorName} logo`}
+                  width={28}
+                  height={28}
+                  className="h-7 w-7"
+                />
+              ) : (
+                <IndustryIcon iconName={comparison.icon} className="h-6 w-6 text-primary" />
+              )}
             </div>
             <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </div>

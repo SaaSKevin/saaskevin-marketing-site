@@ -37,6 +37,7 @@ const ComparisonFrontmatterSchema = z.object({
   competitorUrl: z.string().min(1),
   category: z.string().min(1),
   icon: z.string().min(1).optional(),
+  logo: z.string().min(1).optional(),
   draft: z.boolean().optional(),
   metaKeywords: z.array(z.string().min(1)).optional(),
 })
@@ -51,6 +52,7 @@ export type Comparison = {
   competitorUrl: string
   category: string
   icon?: string
+  logo?: string
   draft: boolean
   url: string
   metaKeywords: string[]
@@ -96,6 +98,7 @@ const parseComparisonFromFile = async (
     competitorUrl: fm.competitorUrl,
     category: fm.category,
     icon: fm.icon,
+    logo: fm.logo,
     draft: fm.draft ?? false,
     url: `${SITE_URL}/compare/${slug}`,
     metaKeywords: fm.metaKeywords ?? [],
