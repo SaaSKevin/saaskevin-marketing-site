@@ -33,7 +33,7 @@ export function CTA() {
                   className="h-12 bg-primary hover:bg-accent text-primary-foreground px-8 text-base"
                   asChild
                 >
-                  <Link href={MARKETING_URLS.auth.join}>
+                  <Link href={MARKETING_URLS.signup}>
                     {SIGNUP_CTA_TEXT}
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>

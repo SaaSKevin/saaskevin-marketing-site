@@ -74,7 +74,7 @@ const getMarkdownFiles = async (directoryPath: string): Promise<string[]> => {
 const applyContentTokens = (content: string) =>
   content
     .replaceAll(MARKETING_CONTENT_TOKENS.signupCtaText, SIGNUP_CTA_TEXT)
-    .replaceAll(MARKETING_CONTENT_TOKENS.signupJoinUrl, MARKETING_URLS.auth.join)
+    .replaceAll(MARKETING_CONTENT_TOKENS.signupJoinUrl, MARKETING_URLS.signup)
     .replaceAll(MARKETING_CONTENT_TOKENS.signupOfferLine, MARKETING_COPY.signupOfferLine)
 
 const parseComparisonFromFile = async (

@@ -21,7 +21,7 @@ export function IndustryCTA({
   title = "Ready to Add Custom Domains?",
   description = "Start offering your users beautiful, branded domains with SaaSKevin. Setup takes just 5 minutes.",
   primaryCtaText = SIGNUP_CTA_TEXT,
-  primaryCtaLink = MARKETING_URLS.auth.join,
+  primaryCtaLink = MARKETING_URLS.signup,
   benefits = [
     PRICING_COPY.firstFreeDomains,
     PRICING_COPY.pricePerDomainAfter,

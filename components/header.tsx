@@ -52,7 +52,7 @@ export function Header() {
             <Link href={MARKETING_URLS.auth.login}>Log In</Link>
           </Button>
           <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground whitespace-nowrap" asChild>
-            <Link href={MARKETING_URLS.auth.join}>{SIGNUP_CTA_TEXT}</Link>
+            <Link href={MARKETING_URLS.signup}>{SIGNUP_CTA_TEXT}</Link>
           </Button>
         </div>
 
@@ -123,7 +123,7 @@ export function Header() {
                 <Link href={MARKETING_URLS.auth.login} onClick={() => setMobileMenuOpen(false)}>Log In</Link>
               </Button>
               <Button size="sm" className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href={MARKETING_URLS.auth.join} onClick={() => setMobileMenuOpen(false)}>{SIGNUP_CTA_TEXT}</Link>
+                <Link href={MARKETING_URLS.signup} onClick={() => setMobileMenuOpen(false)}>{SIGNUP_CTA_TEXT}</Link>
               </Button>
             </div>
           </div>

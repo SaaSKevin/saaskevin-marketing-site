@@ -26,7 +26,7 @@ export function Hero({
   ),
   description = "SaaSKevin lets you offer white-label custom domains to your users without any of the headaches and complexity.",
   primaryCtaText = SIGNUP_CTA_TEXT,
-  primaryCtaLink = MARKETING_URLS.auth.join,
+  primaryCtaLink = MARKETING_URLS.signup,
 }: HeroProps) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">

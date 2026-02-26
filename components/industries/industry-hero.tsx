@@ -26,7 +26,7 @@ export function IndustryHero({
   industry,
   icon,
   ctaText = SIGNUP_CTA_TEXT,
-  ctaLink = MARKETING_URLS.auth.join,
+  ctaLink = MARKETING_URLS.signup,
 }: IndustryHeroProps) {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">

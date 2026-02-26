@@ -158,7 +158,7 @@ export default function ToolsPage() {
               className="bg-primary hover:bg-accent text-primary-foreground"
               asChild
             >
-              <Link href={MARKETING_URLS.auth.join}>
+              <Link href={MARKETING_URLS.signup}>
                 {SIGNUP_CTA_TEXT}
                 <ArrowRight className="ml-1.5 h-4 w-4" />
               </Link>

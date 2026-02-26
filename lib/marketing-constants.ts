@@ -1,11 +1,14 @@
 export const MARKETING_URLS = {
   site: "https://saaskevin.com",
   appBase: "https://app.saaskevin.com",
+  signup: "/signup",
   auth: {
     join: "https://app.saaskevin.com/auth/join",
     login: "https://app.saaskevin.com/auth/login",
   },
 } as const
+
+export const TALLY_FORM_ID = "kdYEoj"
 
 export const SIGNUP_CTA_TEXT = "Claim 3 Free Domains"
 

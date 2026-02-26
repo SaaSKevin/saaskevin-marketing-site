@@ -41,7 +41,7 @@ export function ToolSidebarCta({ className }: ToolSidebarCtaProps) {
             className="w-full bg-primary hover:bg-accent text-primary-foreground"
             asChild
           >
-            <Link href={MARKETING_URLS.auth.join}>
+            <Link href={MARKETING_URLS.signup}>
               {SIGNUP_CTA_TEXT}
               <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
             </Link>

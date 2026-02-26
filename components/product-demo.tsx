@@ -485,7 +485,7 @@ export function ProductDemo() {
 
         <div className="mt-10 text-center">
           <Button className="bg-primary hover:bg-accent text-primary-foreground" asChild>
-            <Link href={MARKETING_URLS.auth.join}>{SIGNUP_CTA_TEXT}</Link>
+            <Link href={MARKETING_URLS.signup}>{SIGNUP_CTA_TEXT}</Link>
           </Button>
         </div>
       </div>

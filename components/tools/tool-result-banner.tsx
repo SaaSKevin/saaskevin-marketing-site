@@ -23,7 +23,7 @@ export function ToolResultBanner({
     >
       <p className="text-sm text-muted-foreground flex-1">{message}</p>
       <Button size="sm" variant="outline" className="shrink-0 gap-1.5" asChild>
-        <Link href={MARKETING_URLS.auth.join}>
+        <Link href={MARKETING_URLS.signup}>
           {SIGNUP_CTA_TEXT}
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>

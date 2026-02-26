@@ -69,7 +69,7 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button variant="outline" className="w-full border-border text-foreground hover:text-foreground hover:bg-transparent" asChild>
-                <Link href={MARKETING_URLS.auth.join} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
+                <Link href={MARKETING_URLS.signup} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
                   {SIGNUP_CTA_TEXT}
                 </Link>
               </Button>
@@ -114,7 +114,7 @@ export function Pricing() {
 
             <div className="mt-8">
               <Button className="w-full bg-primary hover:bg-accent text-primary-foreground" asChild>
-                <Link href={MARKETING_URLS.auth.join} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
+                <Link href={MARKETING_URLS.signup} aria-label={SIGNUP_CTA_TEXT} tabIndex={0}>
                   {SIGNUP_CTA_TEXT}
                 </Link>
               </Button>
